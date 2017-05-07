@@ -1,4 +1,4 @@
-Based on the sensors and the physical structures (especially the pohysical limits) we now have these ideas below:
+Based on the given sensors and the physical structures (especially the pohysical limits) we now have these ideas below:
 
 1. trce a line
 2. find a shortest way to the destination in a map with many 'crossroads'
