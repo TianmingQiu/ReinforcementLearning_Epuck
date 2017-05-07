@@ -1,0 +1,33 @@
+report
+
+1. project description:
+somehow like a postman send the packages to the destinations or  amazon roboters
+a epuck will follow the line in the map, detect the atificial road, city map with different blocks, 
+the map have many crossroads 
+the map will be given previously, 
+e peck will find the optimal route to destination
+we shall add some obtascles in the future.
+  
+2. model:
+action: trun right, turn left, turn right, forward, backward(转的时候要掉头，不能直接向后转)
+states: different crossroads 5-10 states
+reward: when the epuck arrives at the destination, it will get 10 points, the another states are 0.  
+
+
+3.how to judge which state epuck is:
+solution 1: use the under sensor to scan the "光电黑白编码" on the road in oder to know which 'road' the Epuck is.
+
+solution 2: use the front cmos camera to do some pattern recognition.
+e.g. detect 'A', 'B', 'C'.......
+or: dectect differnt colors
+ 
+
+4. algorithm:
+q learning
+calculate the different states' Q-function
+
+
+5. how to avoid obstacles:
+differnt from the grid world scenary, epuck will go 'into' the obstacles, namely wrong states. so how to deal with these problems?
+a question:
+whether add new states for the new coming obstacles or 'blind alley' 
