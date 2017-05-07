@@ -1,4 +1,6 @@
-report(version 1.0 07.05.2017)
+report
+07.05.2017
+
 
 1. project description:
 somehow like a postman send the packages to the destinations or  amazon roboters
@@ -9,13 +11,13 @@ e peck will find the optimal route to destination
 we shall add some obtascles in the future.
   
 2. model:
-action: trun right, turn left, turn right, forward, backward(转的时候要掉头，不能直接向后转)
+action: trun right, turn left, turn right, forward, backward(杞殑鏃跺�欒鎺夊ご锛屼笉鑳界洿鎺ュ悜鍚庤浆)
 states: different crossroads 5-10 states
 reward: when the epuck arrives at the destination, it will get 10 points, the another states are 0.  
 
 
 3.how to judge which state epuck is:
-solution 1: use the under sensor to scan the "光电黑白编码" on the road in oder to know which 'road' the Epuck is.
+solution 1: use the under sensor to scan the "鍏夌數榛戠櫧缂栫爜" on the road in oder to know which 'road' the Epuck is.
 
 solution 2: use the front cmos camera to do some pattern recognition.
 e.g. detect 'A', 'B', 'C'.......
