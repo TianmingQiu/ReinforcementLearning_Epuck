@@ -58,7 +58,7 @@ Path planning is a widely-studied and basic problem.
 Also it has many actual scenarios, for example, for autonomous car navigation and drones for logistics. 
 Considering about distance and traffic situation, the optimal path between start and destination will be figured out. 
 It is related to mathematics, optimal research, and artificial intelligence. 
-Although there are already many existing algorithms to find the best path, we shall attempt to solve this problem with reinforcement learning.
+Although there are already many existing algorithms to find the best path\cite{koenig1992complexity}, we shall attempt to solve this problem with reinforcement learning.
 
 This project offers an agent which could find the shortest path between two locations in a unfamiliar road network and thus reduce the cost of time and energy.
 
@@ -99,7 +99,7 @@ the E-puck may find the shortest path to the destination according the latest va
 
 \section{Model}
 
-\quad The model part includes how we disgn the states, actions, reward and value function as well as how the algorithm works.
+\quad The model part includes how we disgn the states, actions, reward and Q function as well as how the algorithm works.
 
 %------------------------------------------------
 
@@ -139,7 +139,7 @@ Therefore we ought to design a safe solution to make E-puck turn round and chang
 
 %-------------------------------------
 \subsection{Reward}
-Reward setting is always the most difficult part in reinforcement learning algorithm. 
+\quad Reward setting is always the most difficult part in reinforcement learning algorithm. 
 In this model we will assign a reward ‘+10’ at the destination state and ‘0’ at the other states. 
 Also at the ‘blind alley’ it will get a very poor reward such as ‘-100’.
 
@@ -148,7 +148,7 @@ Also at the ‘blind alley’ it will get a very poor reward such as ‘-100’.
 %-----------------------------------
 \subsection{Q function}
 \quad
-We decide to use \textsl{Q-Learning}(Watkins, 1989), defined by
+We decide to use \textsl{Q-Learning}(Watkins, 1989)\cite{sutton1998reinforcement}, defined by
 \begin{equation}
 \mathit{Q(S_t,A_t)\xleftarrow{}  Q(S_t,A_t)+ }\alpha \mathit{[ R_{t+1} + }\gamma \mathit{\max \limits_{a}Q(S_{t+1},a)-Q(S_t,A_t)]}
 \end{equation}
@@ -161,17 +161,28 @@ At each iteration step the Q function would be updated and the action would be t
 %	Project management
 %----------------------------------------------------------------------------------------
 \section{Project management}
+\quad The project will be divided into three part by the type of work: Learning algorithms, recognition algorithm and Simulation in V-rep and physical arena.
 
-\paragraph{Stage 1} familiar with Python and Vrep simulation environment
+\begin{itemize}[noitemsep]
+\item \textbf{Learning Algorithms:} An off-policy TD control Q-learning algorithm will be designed for deterministic road network.
+\item \textbf{recognition algorithm:} Find a solution to determine the feature patterns and realize computer vision part algorithm 
+\item \textbf{ simulation in V-Rep and physical arena:}	Familar with the manipulation of V-rep and bild the physical test arena
+\end{itemize}
 
-\paragraph{Stage 2} according the primary conception, 
+\paragraph{}
+We will set up several milestones in our futrue project and divide our project into four stages:
+\begin{itemize}[noitemsep]
+\item \textbf{Stage 1:} familiar with Python and Vrep simulation environment
+
+\item \textbf{Stage 2:} according the primary conception, 
 we will design a simple map with less than 10 states to test and modify both the modeling and algorithm
 
-\paragraph{Stage 3} confirm the modeling, optimize our algorithm
-\paragraph{Stage 4} tranfrom the program from simulation environment to the real E-puck
+\item \textbf{Stage 3:} confirm the modeling, optimize our algorithm
+\item \textbf{Stage 4:} tranfrom the program from simulation environment to the real E-puck
+\end{itemize}
 
 
-
-
+\bibliographystyle{IEEEtran}
+\bibliography{citation}
 
 \end{document}
