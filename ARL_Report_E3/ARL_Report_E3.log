@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.12.25)  10 MAY 2017 23:50
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.12.25)  11 MAY 2017 16:01
 entering extended mode
-**C:/Users/Ming/Desktop/ARL_Report_E3/ARL_Report_E3.tex
-(C:/Users/Ming/Desktop/ARL_Report_E3/ARL_Report_E3.tex
+**D:/mygit/E3/ARL_Report_E3/ARL_Report_E3.tex
+(D:/mygit/E3/ARL_Report_E3/ARL_Report_E3.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\koma-script\scrartcl.cls"
@@ -109,7 +109,7 @@ Package typearea Info: These are the values describing the layout:
 \c@figure=\count86
 \c@table=\count87
 \bibindent=\dimen102
-) (C:\Users\Ming\Desktop\ARL_Report_E3\structure.tex
+) (D:\mygit\E3\ARL_Report_E3\structure.tex
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\classicthesis\classicthesis.sty"
 Package: classicthesis 2011/12/17 v4.0 Typographic style for a classic-looking 
 thesis
@@ -801,7 +801,7 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 74.
 LaTeX Warning: Unused global option(s):
     [headincludeBCOR3mm].
 
-(C:\Users\Ming\Desktop\ARL_Report_E3\ARL_Report_E3.aux)
+(D:\mygit\E3\ARL_Report_E3\ARL_Report_E3.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
@@ -837,8 +837,8 @@ LaTeX Info: Redefining \ref on input line 34.
 LaTeX Info: Redefining \pageref on input line 34.
 LaTeX Info: Redefining \nameref on input line 34.
 
-(C:\Users\Ming\Desktop\ARL_Report_E3\ARL_Report_E3.out)
-(C:\Users\Ming\Desktop\ARL_Report_E3\ARL_Report_E3.out)
+(D:\mygit\E3\ARL_Report_E3\ARL_Report_E3.out)
+(D:\mygit\E3\ARL_Report_E3\ARL_Report_E3.out)
 \@outlinefile=\write3
 LaTeX Info: Redefining \Ref on input line 34.
 
@@ -938,41 +938,45 @@ LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <10> not available
 
 
 {D:/Program Files/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}
-} <C:/Users/Ming/Desktop/ARL_Report_E3/Figures/simulatemap.jpg>]
+} <D:/mygit/E3/ARL_Report_E3/Figures/simulatemap.jpg>]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
  [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 174.
+LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 151.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
  [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
-
-(C:\Users\Ming\Desktop\ARL_Report_E3\ARL_Report_E3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
+ (D:\mygit\E3\ARL_Report_E3\ARL_Report_E3.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
 Package rerunfilecheck Info: File `ARL_Report_E3.out' has not changed.
-(rerunfilecheck)             Checksum: 35ED2D8CB2F9B1E37E655FDDDE2F5A05;453.
+(rerunfilecheck)             Checksum: D82FA3505B336D0C2D9A23224A5A9C15;449.
  ) 
 Here is how much of TeX's memory you used:
- 12418 strings out of 495354
- 188801 string characters out of 3183074
+ 12433 strings out of 495354
+ 188912 string characters out of 3183074
  422172 words of memory out of 3000000
- 15337 multiletter control sequences out of 15000+200000
- 76895 words of font info for 91 fonts, out of 3000000 for 9000
+ 15346 multiletter control sequences out of 15000+200000
+ 81731 words of font info for 99 fonts, out of 3000000 for 9000
  16 hyphenation exceptions out of 8191
- 52i,8n,52p,396b,392s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/Program Files/CTEX/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc}{D:/Program 
-Files/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}{D:/Program Files/CTEX/MiKTeX
+ 52i,13n,52p,386b,392s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/Program Files/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}{D:/Program Fil
+es/CTEX/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc}{D:/Program Files/CTEX/MiKTeX
 /fonts/enc/dvips/iwona/ec-iwona-sc.enc}<D:/Program Files/CTEX/MiKTeX/fonts/type
-1/public/amsfonts/euler/eufm10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/pu
-blic/amsfonts/euler/eurm10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public
-/amsfonts/euler/eurm7.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/fpl/
-fplrc8a.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/nowacki/iwona/iwonab.pfb>
-<D:/Program Files/CTEX/MiKTeX/fonts/type1/nowacki/iwona/iwonar.pfb><D:/Program 
-Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on ARL_Report_E3.pdf (3 pages, 1635134 bytes).
+1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/publi
+c/amsfonts/euler/eufm10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/am
+sfonts/euler/eufm7.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfont
+s/euler/eurm10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/fpl/fplrc8a
+.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/fpl/fplrij8a.pfb><D:/Prog
+ram Files/CTEX/MiKTeX/fonts/type1/nowacki/iwona/iwonab.pfb><D:/Program Files/CT
+EX/MiKTeX/fonts/type1/nowacki/iwona/iwonar.pfb><D:/Program Files/CTEX/MiKTeX/fo
+nts/type1/urw/palatino/uplr8a.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw
+/palatino/uplri8a.pfb>
+Output written on ARL_Report_E3.pdf (3 pages, 1655594 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 106 PDF objects out of 1000 (max. 8388607)
  14 named destinations out of 1000 (max. 500000)
- 14406 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 16454 words of extra memory for PDF output out of 17280 (max. 10000000)
 

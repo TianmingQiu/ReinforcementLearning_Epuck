@@ -143,15 +143,18 @@ Reward setting is always the most difficult part in reinforcement learning algor
 In this model we will assign a reward ‘+10’ at the destination state and ‘0’ at the other states. 
 Also at the ‘blind alley’ it will get a very poor reward such as ‘-100’.
 
+
+
 %-----------------------------------
-\subsection{Value function}
-Reward setting is always the most difficult part in reinforcement learning algorithm. 
-In this model we will assign a reward ‘+10’ at the destination state and ‘0’ at the other states. 
+\subsection{Q function}
+\quad
+We decide to use \textsl{Q-Learning}(Watkins, 1989), defined by
 \begin{equation}
-\cos^3 \theta =\frac{1}{4}\cos\theta+\frac{3}{4}\cos 3\theta
-\label{eq:refname2}
+\mathit{Q(S_t,A_t)\xleftarrow{}  Q(S_t,A_t)+ }\alpha \mathit{[ R_{t+1} + }\gamma \mathit{\max \limits_{a}Q(S_{t+1},a)-Q(S_t,A_t)]}
 \end{equation}
-Also at the ‘blind alley’ it will get a very poor reward such as ‘-100’.
+\quad And an off-policy TD control algorithm would be adopted.
+At each iteration step the Q function would be updated and the action would be taken greedily.
+
 
 
 %----------------------------------------------------------------------------------------
