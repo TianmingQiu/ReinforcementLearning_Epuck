@@ -1,0 +1,131 @@
+%----------------------
+% Applied Reinforcement Learning
+% Tianming Qiu
+%----------------------
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Applied Reinforcement Learning]{Finding The Shortest Path} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{ } % Your name
+\institute[Technical University of Munich] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Tianming Qiu, Lingfeng Zhang, Wenhan Hao\\ % Your institution for the title page
+\medskip
+%\textit{john@smith.com} % Your email address
+}
+%\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+%---------------------------------------------------
+\begin{frame}
+\frametitle{Project Description}
+Simulation map in Vrep.
+\begin{figure}
+\includegraphics[width=0.88\linewidth]{simulatemap}
+\end{figure}
+\end{frame}
+%---------------------------------------------------
+
+%---------------------------------------------------
+\begin{frame}
+\frametitle{Model}
+\begin{block}{State}
+Crossroads in map.
+\\
+Detected the road signs by camera.
+\end{block}
+
+\begin{block}{Action}
+$\leftarrow \quad \rightarrow \quad \uparrow \quad \downarrow$
+\end{block}
+
+\begin{block}{Reward}
+‘+10’ at the destination state and ‘0’ at the other states.\\ 
+Also at the ‘blind alley’ it will get a very poor reward such as ‘-100’.
+\end{block}
+\begin{block}{Q function}
+${Q(S_t,A_t)\xleftarrow{}  Q(S_t,A_t)+ }\alpha {[ R_{t+1} + }\gamma {\max \limits_{a}Q(S_{t+1},a)-Q(S_t,A_t)]}
+$
+\end{block}
+\end{frame}
+%---------------------------------------------------
+
+
+
+\end{document} 
