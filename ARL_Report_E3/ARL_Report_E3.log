@@ -1,49 +1,47 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.5.11)  11 MAY 2017 16:30
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.12.25)  17 MAY 2017 16:12
 entering extended mode
-**C:/Users/Lingfeng/Documents/E3/ARL_Report_E3/ARL_Report_E3.tex
-(C:/Users/Lingfeng/Documents/E3/ARL_Report_E3/ARL_Report_E3.tex
+**D:/mygit/E3/ARL_Report_E3/ARL_Report_E3.tex
+(D:/mygit/E3/ARL_Report_E3/ARL_Report_E3.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-(F:\CTEX\UserData\tex\latex\koma-script\scrartcl.cls
-Document Class: scrartcl 2017/01/03 v3.22 KOMA-Script document class (article)
-(F:\CTEX\UserData\tex\latex\koma-script\scrkbase.sty
-Package: scrkbase 2017/01/03 v3.22 KOMA-Script package (KOMA-Script-dependent b
-asics and keyval usage)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\koma-script\scrartcl.cls"
+Document Class: scrartcl 2012/03/08 v3.10a KOMA-Script document class (article)
 
-(F:\CTEX\UserData\tex\latex\koma-script\scrbase.sty
-Package: scrbase 2017/01/03 v3.22 KOMA-Script package (KOMA-Script-independent 
+("D:\Program Files\CTEX\MiKTeX\tex\latex\koma-script\scrkbase.sty"
+Package: scrkbase 2012/03/08 v3.10a KOMA-Script package (KOMA-Script-dependent 
 basics and keyval usage)
 
-(F:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\koma-script\scrbase.sty"
+Package: scrbase 2012/03/08 v3.10a KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(F:\CTEX\UserData\tex\latex\koma-script\scrlfile.sty
-Package: scrlfile 2017/01/03 v3.22 KOMA-Script package (loading files)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\koma-script\scrlfile.sty"
+Package: scrlfile 2011/03/09 v3.09 KOMA-Script package (loading files)
 
-Package scrlfile, 2017/01/03 v3.22 KOMA-Script package (loading files)
+Package scrlfile, 2011/03/09 v3.09 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
-))) (F:\CTEX\UserData\tex\latex\koma-script\tocbasic.sty
-Package: tocbasic 2017/01/03 v3.22 KOMA-Script package (handling toc-files)
-\scr@dte@tocline@numberwidth=\skip41
-\scr@dte@tocline@numbox=\box26
+))) ("D:\Program Files\CTEX\MiKTeX\tex\latex\koma-script\tocbasic.sty"
+Package: tocbasic 2011/05/30 v3.09a KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `toc' on input line 130.
+(tocbasic)             for `toc' on input line 115.
 Package tocbasic Info: omitting babel extension for `lof'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 131.
+(tocbasic)             for `lof' on input line 116.
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 132.
-Package scrartcl Info: You've used standard option `11pt'.
-(scrartcl)             This is correct!
-(scrartcl)             Internally I'm using `fontsize=11pt'.
-(scrartcl)             If you'd like to set the option with \KOMAoptions,
-(scrartcl)             you'd have to use `fontsize=11pt' there
-(scrartcl)             instead of `11pt', too.
+(tocbasic)             for `lot' on input line 117.
+Package scrartcl Info: You've used obsolete option `11pt'.
+(scrartcl)             \KOMAExecuteOptions{fontsize=11pt} will be
+(scrartcl)             used instead.
+(scrartcl)             You may simply replace `11pt'
+(scrartcl)             by `fontsize=11pt'.
 Class scrartcl Info: You've used standard option `oneside'.
 (scrartcl)           This is correct!
 (scrartcl)           Internally I'm using `twoside=false'.
@@ -51,20 +49,20 @@ Class scrartcl Info: You've used standard option `oneside'.
 (scrartcl)           you'd have to use `twoside=false' there
 (scrartcl)           instead of `oneside', too.
 Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input l
-ine 2053.
+ine 1263.
 
-(F:\CTEX\UserData\tex\latex\koma-script\scrsize11pt.clo
-File: scrsize11pt.clo 2017/01/03 v3.22 KOMA-Script font size class option (11pt
+("D:\Program Files\CTEX\MiKTeX\tex\latex\koma-script\scrsize11pt.clo"
+File: scrsize11pt.clo 2012/03/08 v3.10a KOMA-Script font size class option (11p
+t)
 )
-)
-(F:\CTEX\UserData\tex\latex\koma-script\typearea.sty
-Package: typearea 2017/01/03 v3.22 KOMA-Script package (type area)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\koma-script\typearea.sty"
+Package: typearea 2012/03/08 v3.10a KOMA-Script package (type area)
 
-Package typearea, 2017/01/03 v3.22 KOMA-Script package (type area)
+Package typearea, 2012/03/08 v3.10a KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
 
-\ta@bcor=\skip42
+\ta@bcor=\skip41
 \ta@div=\count79
 Package typearea Info: You've used standard option `a4paper'.
 (typearea)             This is correct!
@@ -78,10 +76,9 @@ Package typearea Info: You've used standard option `oneside'.
 (typearea)             If you'd like to set the option with \KOMAoptions,
 (typearea)             you'd have to use `twoside=false' there
 (typearea)             instead of `oneside', too.
-\ta@hblk=\skip43
-\ta@vblk=\skip44
-\ta@temp=\skip45
-\footheight=\skip46
+\ta@hblk=\skip42
+\ta@vblk=\skip43
+\ta@temp=\skip44
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 10
 (typearea)             BCOR = 0.0pt
@@ -96,9 +93,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \headheight     = 17.0pt
 (typearea)              \headsep        = 20.40001pt
 (typearea)              \topskip        = 11.0pt
-(typearea)              \footskip       = 47.6pt
+(typearea)              \footskip       = 47.60002pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1583.
+(typearea)              on input line 1177.
 )
 \c@part=\count80
 \c@section=\count81
@@ -106,43 +103,36 @@ Package typearea Info: These are the values describing the layout:
 \c@subsubsection=\count83
 \c@paragraph=\count84
 \c@subparagraph=\count85
-\scr@dte@part@maxnumwidth=\skip47
-\scr@dte@section@maxnumwidth=\skip48
-\scr@dte@subsection@maxnumwidth=\skip49
-\scr@dte@subsubsection@maxnumwidth=\skip50
-\scr@dte@paragraph@maxnumwidth=\skip51
-\scr@dte@subparagraph@maxnumwidth=\skip52
-\abovecaptionskip=\skip53
-\belowcaptionskip=\skip54
-\c@pti@nb@sid@b@x=\box27
+\abovecaptionskip=\skip45
+\belowcaptionskip=\skip46
+\c@pti@nb@sid@b@x=\box26
 \c@figure=\count86
 \c@table=\count87
-Class scrartcl Info: Redefining `\numberline' on input line 5125.
 \bibindent=\dimen102
-) (C:\Users\Lingfeng\Documents\E3\ARL_Report_E3\structure.tex
-(F:\CTEX\UserData\tex\latex\classicthesis\classicthesis.sty
-Package: classicthesis 2015/09/06 v4.2 Typographic style for a classic-looking 
+) (D:\mygit\E3\ARL_Report_E3\structure.tex
+("D:\Program Files\CTEX\MiKTeX\tex\latex\classicthesis\classicthesis.sty"
+Package: classicthesis 2011/12/17 v4.0 Typographic style for a classic-looking 
 thesis
 
-(F:\CTEX\MiKTeX\tex\latex\base\ifthen.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 Package classicthesis Info: Using option "nochapters" (probably for an article)
 . This turns off the options "linedheaders", "manychapters", "floatperchapter",
 "listsseparated", "eulerchapternumbers", and "parts". Please be aware of that. 
-on input line 158.
+on input line 156.
 
-(F:\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(F:\CTEX\MiKTeX\tex\latex\hyperref\hyperref.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/02/06 v6.82o Hypertext links for LaTeX
 
-(F:\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-hyperref.sty
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
 
-(F:\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
@@ -179,22 +169,22 @@ Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
 Package: refcount 2010/12/01 v3.2 Data extraction from references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
 )
-(F:\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty
+("D:\Program Files\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(F:\CTEX\MiKTeX\tex\latex\oberdiek\kvoptions.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
 )
 \@linkdim=\dimen103
 \Hy@linkcounter=\count88
 \Hy@pagecounter=\count89
 
-(F:\CTEX\MiKTeX\tex\latex\hyperref\pd1enc.def
+("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/02/06 v6.82o Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count90
 
-(F:\CTEX\MiKTeX\tex\latex\00miktex\hyperref.cfg
+("D:\Program Files\CTEX\MiKTeX\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4046.
@@ -206,7 +196,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4284.
 \c@Hy@tempcnt=\count91
 
-(F:\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
@@ -230,75 +220,69 @@ LaTeX Info: Redefining \pageref on input line 5831.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(F:\CTEX\MiKTeX\tex\latex\hyperref\hpdftex.def
+("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/02/06 v6.82o Hyperref driver for pdfTeX
 \Fld@listcount=\count96
 \c@bookmark@seq@number=\count97
 
-(F:\CTEX\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip55
+\Hy@SectionHShift=\skip47
 )
-(F:\CTEX\UserData\tex\latex\xcolor\xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(F:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
+("D:\Program Files\CTEX\MiKTeX\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(F:\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
+("D:\Program Files\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gread@gobject=\count98
 )
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 
-(F:\CTEX\MiKTeX\tex\latex\graphics\dvipsnam.def
+("D:\Program Files\CTEX\MiKTeX\tex\latex\graphics\dvipsnam.def"
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
-(F:\CTEX\MiKTeX\tex\latex\psnfss\mathpazo.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\mathpazo.sty"
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
 )
-(F:\CTEX\UserData\tex\latex\bera\beramono.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\bera\beramono.sty"
 Package: beramono 2004/01/31 (WaS)
 )
-(F:\CTEX\UserData\tex\latex\eulervm\eulervm.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\eulervm\eulervm.sty"
 Package: eulervm 2005/01/11 v4.0 (WaS)
 )
-(F:\CTEX\UserData\tex\latex\microtype\microtype.sty
-Package: microtype 2016/05/14 v2.6a Micro-typographical refinements (RS)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\microtype\microtype.sty"
+Package: microtype 2010/01/10 v2.4 Micro-typography with pdfTeX (RS)
 \MT@toks=\toks15
 \MT@count=\count99
-LaTeX Info: Redefining \textls on input line 774.
+LaTeX Info: Redefining \lsstyle on input line 1597.
+LaTeX Info: Redefining \lslig on input line 1597.
+\MT@outer@space=\skip48
+LaTeX Info: Redefining \textls on input line 1605.
 \MT@outer@kern=\dimen106
-LaTeX Info: Redefining \textmicrotypecontext on input line 1310.
-\MT@listname@count=\count100
-
-(F:\CTEX\UserData\tex\latex\microtype\microtype-pdftex.def
-File: microtype-pdftex.def 2016/05/14 v2.6a Definitions specific to pdftex (RS)
-
-LaTeX Info: Redefining \lsstyle on input line 916.
-LaTeX Info: Redefining \lslig on input line 916.
-\MT@outer@space=\skip56
-)
+LaTeX Info: Redefining \textmicrotypecontext on input line 2156.
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(F:\CTEX\UserData\tex\latex\microtype\microtype.cfg
-File: microtype.cfg 2016/05/14 v2.6a microtype main configuration file (RS)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\microtype\microtype.cfg"
+File: microtype.cfg 2010/01/10 v2.4 microtype main configuration file (RS)
 ))
-Package classicthesis Info: A4 paper, Palatino or other on input line 272.
+Package classicthesis Info: A4 paper, Palatino or other on input line 256.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = areaset
 (typearea)             BCOR = 0.0pt
@@ -314,9 +298,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.60002pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 272.
+(typearea)              on input line 256.
 
-(F:\CTEX\UserData\tex\latex\booktabs\booktabs.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\booktabs\booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen107
 \lightrulewidth=\dimen108
@@ -328,225 +312,147 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen114
 \cmidrulekern=\dimen115
 \defaultaddspace=\dimen116
-\@cmidla=\count101
-\@cmidlb=\count102
+\@cmidla=\count100
+\@cmidlb=\count101
 \@aboverulesep=\dimen117
 \@belowrulesep=\dimen118
-\@thisruleclass=\count103
-\@lastruleclass=\count104
+\@thisruleclass=\count102
+\@lastruleclass=\count103
 \@thisrulewidth=\dimen119
 )
-(F:\CTEX\UserData\tex\latex\textcase\textcase.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\textcase\textcase.sty"
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
 )
 Package classicthesis Info: Using pdftex/microtype for character spacing.Make s
-ure your pdftex is version 1.40 or higher. on input line 345.
+ure your pdftex is version 1.40 or higher. on input line 328.
 
-(F:\CTEX\UserData\tex\latex\koma-script\scrlayer-scrpage.sty
-Package: scrlayer-scrpage 2017/01/03 v3.22 KOMA-Script package (end user interf
-ace for scrlayer)
-
-(F:\CTEX\UserData\tex\latex\koma-script\scrlayer.sty
-Package: scrlayer 2017/01/03 v3.22 KOMA-Script package (defining layers and pag
-e styles)
-Package scrlayer Info: Using already defined \footheight
-(scrlayer)             hoping, that this is a length and
-(scrlayer)             not only a macro on input line 107.
-Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 198
-7.
+("D:\Program Files\CTEX\MiKTeX\tex\latex\koma-script\scrpage2.sty"
+Package: scrpage2 2010/04/22 v2.5 LaTeX2e KOMA-Script package
+LaTeX Info: Redefining \pagemark on input line 176.
 )
-Package scrlayer-scrpage Info: deactivating warning for font element
-(scrlayer-scrpage)             `pagefoot' on input line 1203.
-)
-Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
-
-1: subsection
-1: section
-1: section
-1: subsection
-
-Class scrartcl Warning: Usage of package `titlesec' together
-(scrartcl)              with a KOMA-Script class is not recommended.
-(scrartcl)              I'd suggest to use the package only
-(scrartcl)              if you really need it, because it breaks several
-(scrartcl)              KOMA-Script features, i.e., option `headings' and
-(scrartcl)              the extended optional argument of the section
-(scrartcl)              commands.
-(scrartcl)              Nevertheless, using requested
-(scrartcl)              package `titlesec' on input line 378.
-
-(F:\CTEX\UserData\tex\latex\titlesec\titlesec.sty
-Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box28
-\beforetitleunit=\skip57
-\aftertitleunit=\skip58
+("D:\Program Files\CTEX\MiKTeX\tex\latex\titlesec\titlesec.sty"
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box27
+\beforetitleunit=\skip49
+\aftertitleunit=\skip50
 \ttl@plus=\dimen120
 \ttl@minus=\dimen121
 \ttl@toksa=\toks16
 \titlewidth=\dimen122
 \titlewidthlast=\dimen123
 \titlewidthfirst=\dimen124
-
-
-Package titlesec Warning: Non standard sectioning command detected
-(titlesec)                Using default spacing and no format.
-
-
-Package titlesec Warning: Non standard sectioning command detected
-(titlesec)                Using default spacing and no format.
-
-
-Package titlesec Warning: Non standard sectioning command detected
-(titlesec)                Using default spacing and no format.
-
-
-Package titlesec Warning: Non standard sectioning command detected
-(titlesec)                Using default spacing and no format.
-
-
-Package titlesec Warning: Non standard sectioning command detected
-(titlesec)                Using default spacing and no format.
-
 )
-
-Package scrartcl Warning: Activating an ugly workaround for a missing
-(scrartcl)                feature of package `titlesec` on input line 378.
-
-(F:\CTEX\UserData\tex\latex\tocloft\tocloft.sty
-Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
-Package tocloft Info: The document has section divisions on input line 44.
-\cftparskip=\skip59
-\cftbeforetoctitleskip=\skip60
-\cftaftertoctitleskip=\skip61
-\cftbeforepartskip=\skip62
-\cftpartnumwidth=\skip63
-\cftpartindent=\skip64
-\cftbeforesecskip=\skip65
-\cftsecindent=\skip66
-\cftsecnumwidth=\skip67
-\cftbeforesubsecskip=\skip68
-\cftsubsecindent=\skip69
-\cftsubsecnumwidth=\skip70
-\cftbeforesubsubsecskip=\skip71
-\cftsubsubsecindent=\skip72
-\cftsubsubsecnumwidth=\skip73
-\cftbeforeparaskip=\skip74
-\cftparaindent=\skip75
-\cftparanumwidth=\skip76
-\cftbeforesubparaskip=\skip77
-\cftsubparaindent=\skip78
-\cftsubparanumwidth=\skip79
-\cftbeforeloftitleskip=\skip80
-\cftafterloftitleskip=\skip81
-\cftbeforefigskip=\skip82
-\cftfigindent=\skip83
-\cftfignumwidth=\skip84
-\c@lofdepth=\count105
-\c@lotdepth=\count106
-\cftbeforelottitleskip=\skip85
-\cftafterlottitleskip=\skip86
-\cftbeforetabskip=\skip87
-\cfttabindent=\skip88
-\cfttabnumwidth=\skip89
+("D:\Program Files\CTEX\MiKTeX\tex\latex\tocloft\tocloft.sty"
+Package: tocloft 2010/10/13 v2.3e parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 43.
+\cftparskip=\skip51
+\cftbeforetoctitleskip=\skip52
+\cftaftertoctitleskip=\skip53
+\cftbeforepartskip=\skip54
+\cftpartnumwidth=\skip55
+\cftpartindent=\skip56
+\cftbeforesecskip=\skip57
+\cftsecindent=\skip58
+\cftsecnumwidth=\skip59
+\cftbeforesubsecskip=\skip60
+\cftsubsecindent=\skip61
+\cftsubsecnumwidth=\skip62
+\cftbeforesubsubsecskip=\skip63
+\cftsubsubsecindent=\skip64
+\cftsubsubsecnumwidth=\skip65
+\cftbeforeparaskip=\skip66
+\cftparaindent=\skip67
+\cftparanumwidth=\skip68
+\cftbeforesubparaskip=\skip69
+\cftsubparaindent=\skip70
+\cftsubparanumwidth=\skip71
+\cftbeforeloftitleskip=\skip72
+\cftafterloftitleskip=\skip73
+\cftbeforefigskip=\skip74
+\cftfigindent=\skip75
+\cftfignumwidth=\skip76
+\c@lofdepth=\count104
+\c@lotdepth=\count105
+\cftbeforelottitleskip=\skip77
+\cftafterlottitleskip=\skip78
+\cftbeforetabskip=\skip79
+\cfttabindent=\skip80
+\cfttabnumwidth=\skip81
 )
-\newnumberwidth=\skip90
-\beforebibskip=\skip91
-\newchnumberwidth=\skip92
-\figurelabelwidth=\skip93
-\tablelabelwidth=\skip94
+\newnumberwidth=\skip82
+\beforebibskip=\skip83
+\newchnumberwidth=\skip84
+\figurelabelwidth=\skip85
+\tablelabelwidth=\skip86
 
 Using KOMA-command "deffootnote" for footnote setup
-(F:\CTEX\UserData\tex\latex\koma-script\scrtime.sty
-Package: scrtime 2017/01/03 v3.22 KOMA-Script package (time of LaTeX run)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\koma-script\scrtime.sty"
+Package: scrtime 2012/03/08 v3.10a KOMA-Script package (time of LaTeX run)
 )
-(F:\CTEX\MiKTeX\tex\latex\carlisle\remreset.sty))
-(F:\CTEX\UserData\tex\latex\arsclassica\arsclassica.sty
-Package: arsclassica 2017/02/01
+("D:\Program Files\CTEX\MiKTeX\tex\latex\carlisle\remreset.sty"))
+("D:\Program Files\CTEX\MiKTeX\tex\latex\arsclassica\arsclassica.sty"
+Package: arsclassica 2012/02/21 v4.0 Customizing ClassicThesis (LP)
 
-(F:\CTEX\UserData\tex\latex\caption\caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\caption\caption.sty"
+Package: caption 2011/11/10 v3.2e Customizing captions (AR)
 
-(F:\CTEX\UserData\tex\latex\caption\caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
+("D:\Program Files\CTEX\MiKTeX\tex\latex\caption\caption3.sty"
+Package: caption3 2011/11/01 v1.4a caption3 kernel (AR)
 \captionmargin=\dimen125
 \captionmargin@=\dimen126
 \captionwidth=\dimen127
-\caption@tempdima=\dimen128
-\caption@indent=\dimen129
-\caption@parindent=\dimen130
-\caption@hangindent=\dimen131
+\caption@indent=\dimen128
+\caption@parindent=\dimen129
+\caption@hangindent=\dimen130
 )
 Package caption Info: KOMA-Script document class.
-\c@ContinuedFloat=\count107
+\c@ContinuedFloat=\count106
 Package caption Info: hyperref package is loaded.
 )
-Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = areaset
-(typearea)             BCOR = 0.0pt
-(typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 370.0pt
-(typearea)              \evensidemargin = 41.48396pt
-(typearea)              \oddsidemargin  = 41.48396pt
-(typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 784.0pt
-(typearea)              \topmargin      = -88.27103pt
-(typearea)              \headheight     = 15.95pt
-(typearea)              \headsep        = 20.40001pt
-(typearea)              \topskip        = 11.0pt
-(typearea)              \footskip       = 47.60002pt
-(typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 17.
+LaTeX Info: Redefining \spacedallcaps on input line 57.
+LaTeX Info: Redefining \spacedlowsmallcaps on input line 57.
 
-
-Package typearea Warning: page content and margins higher than paper.
-(typearea)                This may result in page footer out of paper.
-(typearea)                You should decrease DIV, decrease foot height,
-(typearea)                or decreate height of text area.
-
-LaTeX Info: Redefining \spacedallcaps on input line 64.
-LaTeX Info: Redefining \spacedlowsmallcaps on input line 64.
-(F:\CTEX\UserData\tex\latex\titlesec\block.tss
-File: block.tss 2016/03/15
+("D:\Program Files\CTEX\MiKTeX\tex\latex\titlesec\block.tss"
+File: block.tss 2011/12/15
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 186.
-Package hyperref Info: Option `linktocpage' set `true' on input line 186.
-Package hyperref Info: Option `breaklinks' set `true' on input line 186.
-Package hyperref Info: Option `pageanchor' set `true' on input line 186.
-Package hyperref Info: Option `plainpages' set `false' on input line 186.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 186.
+Package hyperref Info: Option `colorlinks' set `true' on input line 192.
+Package hyperref Info: Option `linktocpage' set `true' on input line 192.
+Package hyperref Info: Option `breaklinks' set `true' on input line 192.
+Package hyperref Info: Option `pageanchor' set `true' on input line 192.
+Package hyperref Info: Option `plainpages' set `false' on input line 192.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 192.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 186.
-Package hyperref Info: Option `hypertexnames' set `true' on input line 186.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 192.
+Package hyperref Info: Option `hypertexnames' set `true' on input line 192.
 
 
 Package hyperref Warning: Option `hyperfootnotes' has already been used,
-(hyperref)                setting the option has no effect on input line 186.
+(hyperref)                setting the option has no effect on input line 192.
 
 
 Package hyperref Warning: Option `pdfpagelabels' has already been used,
-(hyperref)                setting the option has no effect on input line 186.
+(hyperref)                setting the option has no effect on input line 192.
 
-) (F:\CTEX\MiKTeX\tex\latex\base\fontenc.sty
+) ("D:\Program Files\CTEX\MiKTeX\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(F:\CTEX\MiKTeX\tex\latex\base\t1enc.def
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(F:\CTEX\MiKTeX\tex\latex\base\inputenc.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 
-(F:\CTEX\MiKTeX\tex\latex\base\utf8.def
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(F:\CTEX\MiKTeX\tex\latex\base\t1enc.dfu
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -696,7 +602,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(F:\CTEX\MiKTeX\tex\latex\base\ot1enc.dfu
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -727,7 +633,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(F:\CTEX\MiKTeX\tex\latex\base\omsenc.dfu
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -753,135 +659,135 @@ Now handling font encoding PD1 ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(F:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(F:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(F:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(F:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+("D:\Program Files\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
-\Gin@req@height=\dimen132
-\Gin@req@width=\dimen133
+\Gin@req@height=\dimen131
+\Gin@req@width=\dimen132
 )
-(F:\CTEX\UserData\tex\latex\enumitem\enumitem.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\enumitem\enumitem.sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip95
-\enit@outerparindent=\dimen134
+\labelindent=\skip87
+\enit@outerparindent=\dimen133
 \enit@toks=\toks19
-\enit@inbox=\box29
-\enitdp@description=\count108
+\enit@inbox=\box28
+\enitdp@description=\count107
 )
-(F:\CTEX\UserData\tex\latex\lipsum\lipsum.sty
-Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count109
+("D:\Program Files\CTEX\MiKTeX\tex\latex\lipsum\lipsum.sty"
+Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count108
 )
-(F:\CTEX\UserData\tex\latex\subfig\subfig.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\subfig\subfig.sty"
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count110
-\sf@farskip=\skip96
-\sf@captopadj=\dimen135
-\sf@capskip=\skip97
-\sf@nearskip=\skip98
-\c@subfigure=\count111
-\c@subfigure@save=\count112
-\c@subtable=\count113
-\c@subtable@save=\count114
-\sf@top=\skip99
-\sf@bottom=\skip100
+\c@KVtest=\count109
+\sf@farskip=\skip88
+\sf@captopadj=\dimen134
+\sf@capskip=\skip89
+\sf@nearskip=\skip90
+\c@subfigure=\count110
+\c@subfigure@save=\count111
+\c@subtable=\count112
+\c@subtable@save=\count113
+\sf@top=\skip91
+\sf@bottom=\skip92
 )
-(F:\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty"
 Package: amsmath 2000/07/18 v2.13 AMS math features
-\@mathmargin=\skip101
+\@mathmargin=\skip93
 
 For additional information on amsmath, use the `?' option.
-(F:\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-(F:\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks20
-\ex@=\dimen136
+\ex@=\dimen135
 ))
-(F:\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen137
+\pmbraise@=\dimen136
 )
-(F:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count115
+\inf@bad=\count114
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count116
-\leftroot@=\count117
+\uproot@=\count115
+\leftroot@=\count116
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count118
-\DOTSCASE@=\count119
+\classnum@=\count117
+\DOTSCASE@=\count118
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
-\Mathstrutbox@=\box30
-\strutbox@=\box31
-\big@size=\dimen138
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen137
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count120
-\c@MaxMatrixCols=\count121
+\macc@depth=\count119
+\c@MaxMatrixCols=\count120
 \dotsspace@=\muskip11
-\c@parentequation=\count122
-\dspbrk@lvl=\count123
+\c@parentequation=\count121
+\dspbrk@lvl=\count122
 \tag@help=\toks21
-\row@=\count124
-\column@=\count125
-\maxfields@=\count126
+\row@=\count123
+\column@=\count124
+\maxfields@=\count125
 \andhelp@=\toks22
-\eqnshift@=\dimen139
-\alignsep@=\dimen140
-\tagshift@=\dimen141
-\tagwidth@=\dimen142
-\totwidth@=\dimen143
-\lineht@=\dimen144
+\eqnshift@=\dimen138
+\alignsep@=\dimen139
+\tagshift@=\dimen140
+\tagwidth@=\dimen141
+\totwidth@=\dimen142
+\lineht@=\dimen143
 \@envbody=\toks23
-\multlinegap=\skip102
-\multlinetaggap=\skip103
+\multlinegap=\skip94
+\multlinetaggap=\skip95
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(F:\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2009/06/22 v3.00
 
-(F:\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(F:\CTEX\MiKTeX\tex\latex\ams\classes\amsthm.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\classes\amsthm.sty"
 Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks25
 \thm@bodyfont=\toks26
 \thm@headfont=\toks27
 \thm@notefont=\toks28
 \thm@headpunct=\toks29
-\thm@preskip=\skip104
-\thm@postskip=\skip105
-\thm@headsep=\skip106
+\thm@preskip=\skip96
+\thm@postskip=\skip97
+\thm@headsep=\skip98
 \dth@everypar=\toks30
 )
-(F:\CTEX\MiKTeX\tex\latex\tools\varioref.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\tools\varioref.sty"
 Package: varioref 2011/10/02 v1.4z package for extended references (FMi)
-\c@vrcnt=\count127
+\c@vrcnt=\count126
 )
-\c@definition=\count128
-\c@theorem=\count129
+\c@definition=\count127
+\c@theorem=\count128
 Package hyperref Info: Option `colorlinks' set `true' on input line 74.
 Package hyperref Info: Option `breaklinks' set `true' on input line 74.
 
@@ -895,7 +801,7 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 74.
 LaTeX Warning: Unused global option(s):
     [headincludeBCOR3mm].
 
-(C:\Users\Lingfeng\Documents\E3\ARL_Report_E3\ARL_Report_E3.aux)
+(D:\mygit\E3\ARL_Report_E3\ARL_Report_E3.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
@@ -912,42 +818,42 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Try loading font information for T1+pplj on input line 34.
 
-(F:\CTEX\MiKTeX\tex\latex\psnfss\t1pplj.fd
+("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\t1pplj.fd"
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 )
-\AtBeginShipoutBox=\box32
+\AtBeginShipoutBox=\box31
 Package hyperref Info: Link coloring ON on input line 34.
 
-(F:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty"
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
-(F:\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count130
+\c@section@level=\count129
 LaTeX Info: Redefining \Ref on input line 498.
 )
 LaTeX Info: Redefining \ref on input line 34.
 LaTeX Info: Redefining \pageref on input line 34.
 LaTeX Info: Redefining \nameref on input line 34.
 
-(C:\Users\Lingfeng\Documents\E3\ARL_Report_E3\ARL_Report_E3.out)
-(C:\Users\Lingfeng\Documents\E3\ARL_Report_E3\ARL_Report_E3.out)
+(D:\mygit\E3\ARL_Report_E3\ARL_Report_E3.out)
+(D:\mygit\E3\ARL_Report_E3\ARL_Report_E3.out)
 \@outlinefile=\write3
 LaTeX Info: Redefining \Ref on input line 34.
 
-(F:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+("D:\Program Files\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count131
-\scratchdimen=\dimen145
-\scratchbox=\box33
-\nofMPsegments=\count132
-\nofMParguments=\count133
+\scratchcounter=\count130
+\scratchdimen=\dimen144
+\scratchbox=\box32
+\nofMPsegments=\count131
+\nofMParguments=\count132
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count134
-\MPscratchDim=\dimen146
-\MPnumerator=\count135
-\makeMPintoPDFobject=\count136
+\MPscratchCnt=\count133
+\MPscratchDim=\dimen145
+\MPnumerator=\count134
+\makeMPintoPDFobject=\count135
 \everyMPtoPDFconversion=\toks32
 )
 LaTeX Info: Redefining \microtypecontext on input line 34.
@@ -955,10 +861,10 @@ Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No font expansion.
-Package microtype Info: No adjustment of tracking.
+Package microtype Info: No tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
- (F:\CTEX\UserData\tex\latex\microtype\mt-ppl.cfg
+ ("D:\Program Files\CTEX\MiKTeX\tex\latex\microtype\mt-ppl.cfg"
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -967,13 +873,9 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for T1+iwona on input line 47.
 
 
-(F:\CTEX\UserData\tex\latex\iwona\t1iwona.fd
+("D:\Program Files\CTEX\MiKTeX\tex\latex\iwona\t1iwona.fd"
 File: t1iwona.fd 2008/07/22 v0.995 font definition file for T1/iwona (MW)
 )
-Package microtype Info: Loading generic settings for font family
-(microtype)             `iwona' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/iwona/b/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <20.74> not available
@@ -981,109 +883,105 @@ LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <20.74> not available
 LaTeX Font Info:    Try loading font information for OT1+pplj on input line 47.
 
 
-(F:\CTEX\MiKTeX\tex\latex\psnfss\ot1pplj.fd
+("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\ot1pplj.fd"
 File: ot1pplj.fd 2004/09/06 font definitions for OT1/pplj.
 )
 LaTeX Font Info:    Try loading font information for U+zeur on input line 47.
 
-(F:\CTEX\UserData\tex\latex\eulervm\uzeur.fd
+("D:\Program Files\CTEX\MiKTeX\tex\latex\eulervm\uzeur.fd"
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
-(F:\CTEX\UserData\tex\latex\microtype\mt-eur.cfg
+("D:\Program Files\CTEX\MiKTeX\tex\latex\microtype\mt-eur.cfg"
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
 LaTeX Font Info:    Try loading font information for U+zeus on input line 47.
 
-(F:\CTEX\UserData\tex\latex\eulervm\uzeus.fd
+("D:\Program Files\CTEX\MiKTeX\tex\latex\eulervm\uzeus.fd"
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
 )
-(F:\CTEX\UserData\tex\latex\microtype\mt-eus.cfg
+("D:\Program Files\CTEX\MiKTeX\tex\latex\microtype\mt-eus.cfg"
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 )
 LaTeX Font Info:    Try loading font information for U+zeuex on input line 47.
 
-(F:\CTEX\UserData\tex\latex\eulervm\uzeuex.fd
+("D:\Program Files\CTEX\MiKTeX\tex\latex\eulervm\uzeuex.fd"
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
 LaTeX Font Info:    Try loading font information for OT1+zplm on input line 47.
 
 
-(F:\CTEX\MiKTeX\tex\latex\psnfss\ot1zplm.fd
+("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\ot1zplm.fd"
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-Package microtype Info: Loading generic settings for font family
-(microtype)             `zplm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-(F:\CTEX\UserData\tex\latex\microtype\mt-msa.cfg
+("D:\Program Files\CTEX\MiKTeX\tex\latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-(F:\CTEX\UserData\tex\latex\microtype\mt-msb.cfg
+("D:\Program Files\CTEX\MiKTeX\tex\latex\microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
+Overfull \hbox (0.17001pt too wide) in paragraph at lines 47--47
+ [][] 
+ []
+
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/m/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
-
 <Figures/simulatemap.jpg, id=36, 1273.75874pt x 670.75594pt>
 File: Figures/simulatemap.jpg Graphic file (type jpg)
 
 <use Figures/simulatemap.jpg>
 Package pdftex.def Info: Figures/simulatemap.jpg used on input line 75.
-(pdftex.def)             Requested size: 185.0pt x 97.41576pt.
+(pdftex.def)             Requested size: 168.0pt x 88.46022pt.
 LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <10> not available
 (Font)              Font shape `T1/iwona/b/n' tried instead on input line 76.
  [1
 
 
-{F:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}} <C:/Users/Li
-ngfeng/Documents/E3/ARL_Report_E3/Figures/simulatemap.jpg>]
-LaTeX Font Info:    Font shape `T1/iwona/bx/sc' in size <10.95> not available
-(Font)              Font shape `T1/iwona/b/sc' tried instead on input line 106.
-
+{D:/Program Files/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}
+} <D:/mygit/E3/ARL_Report_E3/Figures/simulatemap.jpg>]
 Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/iwona/b/sc/10.95'.
+(microtype)             in font `T1/iwona/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
+ [2]
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/pplj/m/it' tried instead on input line 151.
- [2]
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/pplj/b/n' tried instead on input line 167.
-
-(C:\Users\Lingfeng\Documents\E3\ARL_Report_E3\ARL_Report_E3.bbl)
+ (D:\mygit\E3\ARL_Report_E3\ARL_Report_E3.bbl [3])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
- [3]
+ [4]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
 
-(C:\Users\Lingfeng\Documents\E3\ARL_Report_E3\ARL_Report_E3.aux)
+(D:\mygit\E3\ARL_Report_E3\ARL_Report_E3.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
 Package rerunfilecheck Info: File `ARL_Report_E3.out' has not changed.
 (rerunfilecheck)             Checksum: D82FA3505B336D0C2D9A23224A5A9C15;449.
  ) 
 Here is how much of TeX's memory you used:
- 14734 strings out of 495354
- 260720 string characters out of 3183859
- 579181 words of memory out of 3000000
- 17609 multiletter control sequences out of 15000+200000
- 100013 words of font info for 127 fonts, out of 3000000 for 9000
+ 12466 strings out of 495354
+ 189553 string characters out of 3183074
+ 423172 words of memory out of 3000000
+ 15369 multiletter control sequences out of 15000+200000
+ 84656 words of font info for 103 fonts, out of 3000000 for 9000
  16 hyphenation exceptions out of 8191
- 64i,23n,88p,8869b,548s stack positions out of 5000i,500n,10000p,200000b,50000s
-{F:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}{F:/CTEX/UserData/fonts/enc/d
-vips/iwona/ec-iwona-sc.enc}{F:/CTEX/UserData/fonts/enc/dvips/iwona/ec-iwona.enc
-}<F:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><F:/CTEX/MiKTeX/font
-s/type1/public/amsfonts/euler/eufm10.pfb><F:/CTEX/MiKTeX/fonts/type1/public/ams
-fonts/euler/eufm7.pfb><F:/CTEX/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.
-pfb><F:/CTEX/UserData/fonts/type1/public/fpl/fplbj8a.pfb><F:/CTEX/UserData/font
-s/type1/public/fpl/fplrc8a.pfb><F:/CTEX/UserData/fonts/type1/public/fpl/fplrij8
-a.pfb><F:/CTEX/UserData/fonts/type1/nowacki/iwona/iwonab.pfb><F:/CTEX/UserData/
-fonts/type1/nowacki/iwona/iwonar.pfb><F:/CTEX/MiKTeX/fonts/type1/urw/palatino/u
-plb8a.pfb><F:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><F:/CTEX/MiKTeX/f
-onts/type1/urw/palatino/uplri8a.pfb>
-Output written on ARL_Report_E3.pdf (3 pages, 1678343 bytes).
+ 52i,13n,52p,386b,456s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/Program Files/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}{D:/Program Fil
+es/CTEX/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc}{D:/Program Files/CTEX/MiKTeX
+/fonts/enc/dvips/iwona/ec-iwona-sc.enc}<D:/Program Files/CTEX/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/publi
+c/amsfonts/euler/eufm10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/am
+sfonts/euler/eufm7.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfont
+s/euler/eurm10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/fpl/fplbj8a
+.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/fpl/fplrc8a.pfb><D:/Progr
+am Files/CTEX/MiKTeX/fonts/type1/public/fpl/fplrij8a.pfb><D:/Program Files/CTEX
+/MiKTeX/fonts/type1/nowacki/iwona/iwonab.pfb><D:/Program Files/CTEX/MiKTeX/font
+s/type1/nowacki/iwona/iwonar.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/
+palatino/uplb8a.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr
+8a.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on ARL_Report_E3.pdf (4 pages, 1678451 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 28742 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
+ 16966 words of extra memory for PDF output out of 17280 (max. 10000000)
 
