@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TU Muenchen 17 Sommer Semester 
+% Applied Reinforcement Learning
+% 2nd Report 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper, 11pt]{article} % Font size (can be 10pt, 11pt or 12pt) and paper size (remove a4paper for US letter paper)
+
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage{graphicx} % Required for including pictures
+\usepackage{wrapfig} % Allows in-line images
+\usepackage{booktabs}
+\usepackage{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Required for accented characters
+\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
+
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+
+\renewcommand{\maketitle}{ % Customize the title - do not edit title and author name here, see the TITLE block below
+\begin{flushright} % Right align
+{\LARGE\@title} % Increase the font size of the title
+
+\vspace{50pt} % Some vertical space between the title and author name
+
+{\large\@author} % Author name
+\\\@date % Date
+
+\vspace{40pt} % Some vertical space between the author block and abstract
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\title{\textbf{Finding the Shortest Path Using Reinforcement Learning}} % Subtitle
+
+\author{\textsc{Lingfeng Zhang, Wenhan Hao, $\&$ Tianming Qiu} % Author
+\\{\textit{}}} % Institution
+
+\date{Group: applied-rl17 / E3} % Date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title section
+
+
+
+%----------------------------------------------------------------------------------------
+%	ESSAY BODY
+%----------------------------------------------------------------------------------------
+
+\section{Consice Introduction of Project}
+This project focuses on finding a shortest path in a map with many cross roads. The agent has to make an optimal decision to turn into a correct or best direction at each road crossing, namely the state in terms of Markov Decision Process.
+
+%------------------------------------------------
+
+\section{Markov Decision Process Description}
+
+Obviously, the states in this model are the different road crossings. State transition, namely the transition of different road crossing, is adopted as a stochastic process. The modelling of this issue satisfies the Markov Decision Process (MDP). 
+First, it has the Markov property. And the transition from road crossing $C_{t}$ to next crossing $C_{t+1}$ is independent of all the previous states and actions. No matter which road crossing the Epuck was in or which actions it takes before the road crossing $C_{t}$, the probability that it transits from current state to next state would be never influenced. In another words, it can be represented by: $P(s_{t+1})=P(s_{t},a_{t})$. The current state captures all that is relevant about the world in order to predict what the next state will be.
+Secondly, it is clear to see that the state transition is related to action. Epuck can choose to turn right, turn left, go ahead or backward, and the consequence will be dependent on the chosen actions at current state. 
+
+A Markov decision process is a discrete-time state transition system. It can be described formally with 5 components as a 5-tuple $(\mathcal{S,A,P,R},\gamma)$ as below:
+
+\textbf{$\mathcal{S}$: States} First, it has a finite set of states. These states will play the role of outcomes in the decision theoretic approach, as well as providing whatever information is necessary for choosing actions. 
+
+\textbf{$\mathcal{A}$: Action}
+A small finite set includes turn left, turn right, go forward and backward.
+
+\textbf{$\mathcal{S}$: Transition probability}
+The transition probabilities describe the dynamics of the world. They play the role of the next-state function in a problem-solving search, except that every state is thought to be a possible consequence of taking an action in a state. So, we specify, for each state $s_{t}$ and action $a_{t}$, the probability that the next state will be $s_{t+1}$. 
+Now we just model the transition probability as the simplest one: All of them equal to one. That means if and only if Epuck takes a specific action (e.g. turn right) at the current action, it will transit into a definitely deterministic state.
+
+\textbf{$\mathcal{R}$: Reward} In this model we will assign a reward '+10' at the destination state and '0' at the other states. 
+Also at the 'blind alley' it will get a very poor reward such as '-100'.
+
+\textbf{$\gamma$}  $\gamma$ is a discout factor here we select as 0.9.
+
+
+%------------------------------------------------
+\section{Algorithm}
+to be written
+to be written
+
+
+\section{Milestones}
+to be written
+to be written
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\bibliographystyle{unsrt}
+
+\bibliography{sample}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
