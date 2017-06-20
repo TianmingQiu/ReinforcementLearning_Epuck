@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.12.25)  19 JUN 2017 23:10
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.12.25)  20 JUN 2017 15:14
 entering extended mode
 **D:/mygit/E3/Stage2_Report/Stage2_Report.tex
 (D:/mygit/E3/Stage2_Report/Stage2_Report.tex
@@ -21,6 +21,10 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+("D:\Program Files\CTEX\MiKTeX\tex\latex\tools\varioref.sty"
+Package: varioref 2011/10/02 v1.4z package for extended references (FMi)
+\c@vrcnt=\count87
+)
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\microtype\microtype.sty"
 Package: microtype 2010/01/10 v2.4 Micro-typography with pdfTeX (RS)
 
@@ -29,7 +33,7 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 \MT@toks=\toks15
-\MT@count=\count87
+\MT@count=\count88
 LaTeX Info: Redefining \lsstyle on input line 1597.
 LaTeX Info: Redefining \lslig on input line 1597.
 \MT@outer@space=\skip43
@@ -64,7 +68,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
 ("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count88
+\Gread@gobject=\count89
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
@@ -72,7 +76,7 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\wrapfig\wrapfig.sty"
 \wrapoverhang=\dimen106
 \WF@size=\dimen107
-\c@WF@wrappedlines=\count89
+\c@WF@wrappedlines=\count90
 \WF@box=\box26
 \WF@everypar=\toks16
 Package: wrapfig 2003/01/31  v 3.6
@@ -89,12 +93,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen115
 \cmidrulekern=\dimen116
 \defaultaddspace=\dimen117
-\@cmidla=\count90
-\@cmidlb=\count91
+\@cmidla=\count91
+\@cmidlb=\count92
 \@aboverulesep=\dimen118
 \@belowrulesep=\dimen119
-\@thisruleclass=\count92
-\@lastruleclass=\count93
+\@thisruleclass=\count93
+\@lastruleclass=\count94
 \@thisrulewidth=\dimen120
 )
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\mathpazo.sty"
@@ -142,16 +146,16 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 ("D:\Program Files\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count94
+\scratchcounter=\count95
 \scratchdimen=\dimen121
 \scratchbox=\box27
-\nofMPsegments=\count95
-\nofMParguments=\count96
+\nofMPsegments=\count96
+\nofMParguments=\count97
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count97
+\MPscratchCnt=\count98
 \MPscratchDim=\dimen122
-\MPnumerator=\count98
-\makeMPintoPDFobject=\count99
+\MPnumerator=\count99
+\makeMPintoPDFobject=\count100
 \everyMPtoPDFconversion=\toks18
 )
 \big@size=\dimen123
@@ -192,30 +196,41 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
  [1
 
 {D:/Program Files/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}
-}]
-(D:\mygit\E3\Stage2_Report\Stage2_Report.bbl
+}] [2]
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 118--119
+ [][] 
+ []
+
+<simulatemap.jpg, id=14, 1273.75874pt x 670.75594pt>
+File: simulatemap.jpg Graphic file (type jpg)
+ <use simulatemap.jpg>
+Package pdftex.def Info: simulatemap.jpg used on input line 133.
+(pdftex.def)             Requested size: 323.9978pt x 170.61574pt.
+
+[3] (D:\mygit\E3\Stage2_Report\Stage2_Report.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [2] (D:\mygit\E3\Stage2_Report\Stage2_Report.aux) ) 
+) [4 <D:/mygit/E3/Stage2_Report/simulatemap.jpg>]
+(D:\mygit\E3\Stage2_Report\Stage2_Report.aux) ) 
 Here is how much of TeX's memory you used:
- 3097 strings out of 495354
- 46827 string characters out of 3183074
- 118150 words of memory out of 3000000
- 6172 multiletter control sequences out of 15000+200000
- 36414 words of font info for 114 fonts, out of 3000000 for 9000
+ 3300 strings out of 495354
+ 49051 string characters out of 3183074
+ 123187 words of memory out of 3000000
+ 6316 multiletter control sequences out of 15000+200000
+ 39354 words of font info for 149 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 30i,4n,35p,636b,182s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/Program Files/CTEX/MiK
-TeX/fonts/enc/dvips/fontname/8r.enc}<D:/Program Files/CTEX/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/mathpazo/
-fplmri.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D
-:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><D:/Program Fil
-es/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Stage2_Report.pdf (2 pages, 72520 bytes).
+ 30i,6n,35p,950b,232s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/Program Files/CTEX/MiKTeX/fo
+nts/enc/dvips/fontname/8r.enc}<D:/Program Files/CTEX/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/mathpazo/fplmri
+.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/Prog
+ram Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><D:/Program Files/CTE
+X/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Stage2_Report.pdf (4 pages, 1612057 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
+ 43 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 27649 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 27654 words of extra memory for PDF output out of 29859 (max. 10000000)
 
