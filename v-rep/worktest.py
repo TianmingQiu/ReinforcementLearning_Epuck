@@ -57,6 +57,8 @@ def east(current_direction):
         turnspeed = 250
     elif current_direction == 1:
         turnspeed = -250
+    elif current_direction == 3:
+        turnspeed = 0
     else:
         turnspeed = 500
         
@@ -77,6 +79,8 @@ def south(current_direction):
         turnspeed = -250
     elif current_direction == 3:
         turnspeed = 250
+    elif current_direction == 1:
+        turnspeed = 0        
     else:
         turnspeed = 500
         
@@ -97,6 +101,8 @@ def west(current_direction):
         turnspeed = -250
     elif current_direction == 1:
         turnspeed = 250
+    elif current_direction == 2:
+        turnspeed = 0        
     else:
         turnspeed = 500
         
@@ -117,6 +123,8 @@ def north(current_direction):
         turnspeed = 250
     elif current_direction == 3:
         turnspeed = -250
+    elif current_direction == 1:
+        turnspeed = 0        
     else:
         turnspeed = 500
         
