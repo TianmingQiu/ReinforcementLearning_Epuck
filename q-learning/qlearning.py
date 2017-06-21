@@ -13,7 +13,9 @@ def qlearning(reward,transition_matrix,start_state,goal_state):
     # Probability of random action
     epsilon = 0.90
     # Learning rate
-    alpha = 0.8
+    alpha = 0.1
+    # Discount factor
+    gamma = 0.99
     
     num_episodes = 1000
     pi = []
@@ -39,16 +41,15 @@ def qlearning(reward,transition_matrix,start_state,goal_state):
             for action_nxt in valid_action[next_state]:
                 furture_reaward.append(Q[next_state][action_nxt])
         
-            Q[current_state][action] = reward[current_state][action] + alpha * max(furture_reaward)
+            Q[current_state][action] = Q[current_state][action] + alpha*(reward[current_state][action] + gamma * max(furture_reaward) - Q[current_state][action])           
             current_state = next_state
 
     for i in xrange(len(Q)):        
         pi.append(valid_action[i][np.argmax(Q[i][valid_action[i]])])
 
-    return pi
+    return pi,Q
 
 # Reward matrix A are in order(U D L R) 上下左右
-
 reward = np.array([[ 0, 0, 0,-1],   #0
                    [ 0,-1,-1,-1],
                    [-1, 0, 0, 0],
@@ -78,5 +79,9 @@ transition_matrix = np.array([[-1,-1,-1, 1],   #0
 
 
 start_state = 0
-goal_state = 10    
-pi = qlearning(reward,transition_matrix,start_state,goal_state)
+goal_state = 10
+start_orientation = 3    
+pi,Q = qlearning(reward,transition_matrix,start_state,goal_state)
+
+
+
