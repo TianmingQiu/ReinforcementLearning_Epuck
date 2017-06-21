@@ -70,7 +70,7 @@ def east(current_direction):
     time.sleep( 2 )
     epuck.set_motors_speed(0, 0)
     epuck.step()
-    print 'east'
+    print "Epuck is now going east"
     
 def south(current_direction):
     speedl = 300
@@ -92,7 +92,7 @@ def south(current_direction):
     time.sleep( 2 )
     epuck.set_motors_speed(0, 0)
     epuck.step()
-    print 'south'
+    print "Epuck is now going south"
 
 def west(current_direction):
     speedl = 300
@@ -114,7 +114,7 @@ def west(current_direction):
     time.sleep( 2 )
     epuck.set_motors_speed(0, 0)
     epuck.step()  
-    print 'west'
+    print "Epuck is now going west"
 
 def north(current_direction):
     speedl = 300
@@ -136,7 +136,7 @@ def north(current_direction):
     time.sleep( 2 )
     epuck.set_motors_speed(0, 0)
     epuck.step()  
-    print 'north'
+    print "Epuck is now going north"
 
 def Act(command, flag):
     speedl = 300
@@ -149,16 +149,25 @@ def Act(command, flag):
         west(flag)
     else:
         east(flag)
+    epuck.set_motors_speed(200, 200)
+    print "forward a step in oder to avoid detect same state 2 times"
+    epuck.step()
+    time.sleep(1)
+    epuck.set_motors_speed(0, 0)
+    epuck.step()
     while True :
         
-        epuck._sensors_to_read = ['n','m']
+        epuck._sensors_to_read = ['m']
         b = epuck.get_floor_sensors()
+
+        
 
         #Stop
         if (b[0]>500 and b[0]<1000) or (b[1]>500 and b[1]<1000) or (b[2]>500 and b[2]<1000) :
             epuck.set_motors_speed(0, 0)
             epuck.step()
             time.sleep(3)
+            print "arrive at a new state"
             break
             
 		#Go straight
@@ -168,12 +177,12 @@ def Act(command, flag):
             
 		#Turn right
         elif ( b[0]>1000 and b[2]<500 ) :
-			epuck.set_motors_speed(0.5*speedl, 0.1*speedr)
+			epuck.set_motors_speed(0.7*speedl, 0.1*speedr)
 			epuck.step()
             
 		#Turn left
         elif b[0]<500 and b[2]>1000 :
-			epuck.set_motors_speed(0.1*speedl, 0.5*speedr)
+			epuck.set_motors_speed(0.1*speedl, 0.7*speedr)
 			epuck.step()
 		
         else :
@@ -189,13 +198,16 @@ def run (transition_matrix,start_state,goal_state,start_orientation,pi):
 
     current_state = start_state
     current_orientation = start_orientation
-    
+    k = 1
     while current_state != goal_state:
+        print "Epuck thinks it was at State%d" % current_state
         action = pi[current_state]
+        time.sleep(1)
         Act(action, current_orientation)
+        time.sleep(1)
         current_orientation = action        
         current_state = int(transition_matrix[current_state][action])
-
+        k = k + 1
 
 
 

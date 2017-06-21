@@ -60,7 +60,7 @@
 %----------------------------------------------------------------------------------------
 
 \section{Introduction of Project}
-This project focuses on finding a shortest path in a map with many cross roads. The agent has to make an optimal decision to turn into a correct or best direction at each road crossing, the state in terms of Markov Decision Process.
+This project focuses on finding a shortest path in a map with many cross roads. The agent has to make an optimal decision to turn into a correct or best direction at each road crossing. Q learning will be adopted to train the agent.
 
 %------------------------------------------------
 
@@ -68,7 +68,7 @@ This project focuses on finding a shortest path in a map with many cross roads. 
 
 Obviously, the states in this model are the different road crossings. State transition, namely the transition of different road crossing, is adopted as a stochastic process. The modelling of this issue satisfies the Markov Decision Process (MDP).
  
-First, it has the Markov property. And the transition from road crossing $C_{t}$ to next crossing $C_{t+1}$ is independent of all the previous states and actions. No matter which road crossing the Epuck was in or which actions it takes before the road crossing $C_{t}$, the probability that it transits from current state to next state would be never influenced. In another words, it can be represented by: $P(s_{t+1})=P(s_{t},a_{t})$. The current state captures all that is relevant about the world in order to predict what the next state will be.
+First, it has the Markov property. And the transition from road crossing $C_{t}$ to next crossing $C_{t+1}$ is independent of all the previous states and actions. No matter which road crossing the Epuck was in or which actions it takes before the road crossing $C_{t}$, the probability that it transits from current state to next state would be never influenced. In another words, it can be represented by: $P(s_{t+1})=P(s_{t+1}|s_{t},a_{t})$. The current state captures all that is relevant about the world in order to predict what the next state will be.
 
 Secondly, it is clear to see that the state transition is related to action. Epuck can choose to 'drive east','drive west', 'drive north' as well as 'drive south', and the consequences will be dependent on the chosen actions at current state. 
 
@@ -146,19 +146,19 @@ At present we have achieved three main Milestones: determination of the mathemat
 First of all, the mathematical model has been determined. Before we chose the road crossing as states, and we assumed the actions as 'turn right', 'turn left' and so on. However, it caused a serious problem that the model could not satisfy Markov Property. Assume Epuck comes to a road crossing several times, first time it comes from north, namely the last state is in the north direction of current state, and second time comes from south. Since we treat this road crossing as only one state, if Epuck both choose the action 'turn right', the transition probability of the next state will be totally different and somehow dependent on not only the current state, but also the state before, like $P(s_{t+1}|s_{t},s_{t-1},a_{t})$.
 
 Hence we choose a new set of actions as 'go east', 'go west', 'go north' and 'go south'. And on the high level of this problem we just treat our Epuck as a 'mass point'. And leave the detailed problem of action realizations to the lower level. This approach make sure the scene satisfies Markov property. 
-
-Secondly, a viable simulation map has been designed on Vrep. The three floor sensors under Epuck are applied to detect the road, and the road crossings are painted with a gray color to differ from the black road and white background. Although the floor sensor are not very accurate to distinguish high resolution color space, it could be sensitive enough to detect black, white, and gray these three situations. At the moment we assume the state transition probabilities are deterministic. That means Epuck will definitely know where it will be after it takes a specific action at the current state. So we have not use other vision pattern to specify each crossing or state. This part can be improved by next stage's work. 
-
-Thirdly the Q-learning part and the simulation execution of Epuck have been implemented on Vrep by Python. The code can be basically divided into three main parts: Q-learning algorithm, Motion or action control and perception part. Q-learning part is designed to implement a training of the finding shortest path as well as a successful and correct consequence of training. Motion control is used for the low level control issues such as 'go east', turn a corner and so on. Perception focus on the three floor sensors to make sure Epuck could follow the line or stop correctly at the crossing roads. 
 \begin{figure}[tb]
 \centering 
 \includegraphics[width=0.5\columnwidth]{Qvalue} 
-\caption[An example of a floating figure]{An example of simulation map} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
+\caption[An example of a floating figure]{Q Value table after training} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
 \label{fig:Qvalue} 
 \end{figure}
 
+Secondly, a viable simulation map has been designed on Vrep. The three floor sensors under Epuck are applied to detect the road, and the road crossings are painted with a gray color to differ from the black road and white background. Although the floor sensor are not very accurate to distinguish high resolution color space, it could be sensitive enough to detect black, white, and gray these three situations. At the moment we assume the state transition probabilities are deterministic. That means Epuck will definitely know where it will be after it takes a specific action at the current state. So we have not use other vision pattern to specify each crossing or state. This part can be improved by next stage's work. 
+
+Thirdly the Q-learning part and the simulation execution of Epuck have been implemented on Vrep by Python. The code can be basically divided into three main parts: Q-learning algorithm, Motion or action control and perception part. Q-learning part is designed to implement a training of the finding shortest path as well as a successful and correct consequence of training. The result of training Q value table based on current simulation map is shown in Figure~\ref{fig:Qvalue}. Motion control is used for the low level control issues such as 'go east', turn a corner and so on. Perception focus on the three floor sensors to make sure Epuck could follow the line or stop correctly at the crossing roads. 
+
 \section{Future Plan}
-In the next stage we will transit the code from simulation to real epuck and set up a real road environment for Epuck. The main task is to deal with the noise in the real world and make both the training and execution more robust.
+In the next stage we will transit the code from simulation to real epuck and set up a real road environment for Epuck. The main task is to deal with the noise in the real world and make both the training and execution more robust. We also should pay more attentions on the low level control, to make each action accurate and stable.
 
 
 The detail about this project still need to be discussed, for example the probability model for state transition. Instead of deterministic it could be more accurate by defined by a mathematical model.
