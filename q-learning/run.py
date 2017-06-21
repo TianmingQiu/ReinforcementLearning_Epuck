@@ -43,17 +43,21 @@ pi = [3, 3, 0, 1, 3, 1, 1, 1, 3, 1, 0]
 ######################################################################################################
 
 
+def run (transition_matrix,start_state,goal_state,start_orientation):
 
-
-current_state = start_state
-current_orientation = start_orientation
+    current_state = start_state
+    current_orientation = start_orientation
     
-while current_state != goal_state:
-    action = pi[current_state]
-    done = False
+    while current_state != goal_state:
+        action = pi[current_state]
+        Done = False
     
-    while not done:
-        print("老子是坑") ### 此处应有执行函数
-        done = True
+        while not Done:
+            print("老子是坑") ### 此处应有执行函数
+            Done = True
         
-    current_state = int(transition_matrix[current_state][action])
+        current_state = int(transition_matrix[current_state][action])
+
+
+
+run (transition_matrix,start_state,goal_state,start_orientation)
