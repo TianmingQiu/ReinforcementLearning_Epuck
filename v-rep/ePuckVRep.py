@@ -32,13 +32,14 @@
 
 import sys  # System library
 #import serial  # Used for communications
-#import time  # Used for image capture process
-#import struct  # Used for Big-Endian messages
+import time  # Used for image capture process
+import struct  # Used for Big-Endian messages
 #import Image          # Used for the pictures of the camera
 #import i2c # Ground sensors are directly connected to the overo's i2c bus
 import vrep # Interface to the V-REP simulator
 import math
 import ctypes
+import numpy as np
 
 __package__ = "ePuck"
 __docformat__ = "restructuredtext"

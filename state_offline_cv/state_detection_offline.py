@@ -31,7 +31,7 @@ for i in range(256):
     else:
         table.append(0)
 out = im.point(table, '1')
-#out.show()
+out.show()
 
 vcode=pytesseract.image_to_string(out,lang="chi_sim",config="-psm 8")      
 

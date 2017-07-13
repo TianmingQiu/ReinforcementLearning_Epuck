@@ -1,0 +1,2 @@
+1. describe your milestones in detail, not only in big titles
+2. must have interaction with enviroment, online q learning
