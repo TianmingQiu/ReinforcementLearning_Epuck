@@ -16,20 +16,31 @@ def read_state():
     # 从停止线移动到状态区
     s = [2, 2, 2]
     time.sleep(1)
-    speedl = 150
-    speedr = 150 
+    speedl = 300
+    speedr = 300 
     epuck.set_motors_speed(speedl, speedr)
     epuck.step()
-    time.sleep(3)
+    time.sleep(1.5)
     epuck.set_motors_speed(0,0)
     epuck.step()
-    time.sleep(0.5)
+    time.sleep(0.1)
     # 读第一个状态
     s[0] = read_state_step()
     s[1] = read_state_step()
     s[2] = read_state_step()
-
-    return s
+    state_number = 9 * s[0] + 3 * s[1] + s[2]
+    print s
+    epuck.set_motors_speed(-1000, 1000)
+    epuck.step()
+    time.sleep(1.3)
+    
+    epuck.set_motors_speed(1000, 1000)
+    epuck.step()
+    time.sleep(1.5)
+    epuck.set_motors_speed(0,0)
+    epuck.step()
+    time.sleep(0.1)
+    return state_number
     
     
 def read_state_step():
@@ -43,17 +54,17 @@ def read_state_step():
     else:
         digit = 1
         
-    print '读了一次'
-    print digit
-    time.sleep(0.5)
-    speedl = 150
-    speedr = 150 
+    #print '读了一次'
+    #print digit
+    time.sleep(0.1)
+    speedl = 600
+    speedr = 600 
     epuck.set_motors_speed(speedl, speedr)
     epuck.step()
-    time.sleep(3)
+    time.sleep(0.75)
     epuck.set_motors_speed(0, 0)
     epuck.step()
-    time.sleep(0.5)
+    #time.sleep(0.1)
     return digit
     
     
@@ -77,8 +88,8 @@ if __name__ == '__main__':
     epuck.set_debug(True)
     epuck.reset()
         
-    speedl = 300.0
-    speedr = 300.0
+    speedl = 1000.0
+    speedr = 1000.0
     epuck.set_motors_speed (speedl, speedr)
     epuck.step()
     k = 1

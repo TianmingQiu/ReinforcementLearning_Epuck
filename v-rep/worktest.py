@@ -51,96 +51,84 @@ def qlearning(reward,transition_matrix,start_state,goal_state):
 
 
 def east(current_direction):
-    speedl = 300
-    speedr = 300    
+ 
     if current_direction == 0:
-        turnspeed = 250
+        turnspeed = 500
     elif current_direction == 1:
-        turnspeed = -250
+        turnspeed = -500
     elif current_direction == 3:
         turnspeed = 0
     else:
-        turnspeed = 500
+        turnspeed = 1000
         
-    epuck.set_motors_speed(speedl, speedr)
-    epuck.step()
-    time.sleep( 2 )
+
     epuck.set_motors_speed (turnspeed,-turnspeed)
     epuck.step ()
-    time.sleep( 2 )
+    time.sleep( 1.3 )
     epuck.set_motors_speed(0, 0)
     epuck.step()
     print "Epuck is now going east"
     
 def south(current_direction):
-    speedl = 300
-    speedr = 300    
+   
     if current_direction == 2:
-        turnspeed = -250
+        turnspeed = -500
     elif current_direction == 3:
-        turnspeed = 250
+        turnspeed = 500
     elif current_direction == 1:
         turnspeed = 0        
     else:
-        turnspeed = 500
+        turnspeed = 1000
         
-    epuck.set_motors_speed(speedl, speedr)
-    epuck.step()
-    time.sleep( 2 )
+
     epuck.set_motors_speed (turnspeed,-turnspeed)
     epuck.step ()
-    time.sleep( 2 )
+    time.sleep( 1.3 )
     epuck.set_motors_speed(0, 0)
     epuck.step()
     print "Epuck is now going south"
 
 def west(current_direction):
-    speedl = 300
-    speedr = 300    
+ 
     if current_direction == 0:
-        turnspeed = -250
+        turnspeed = -500
     elif current_direction == 1:
-        turnspeed = 250
+        turnspeed = 500
     elif current_direction == 2:
         turnspeed = 0        
     else:
-        turnspeed = 500
+        turnspeed = 1000
         
-    epuck.set_motors_speed(speedl, speedr)
-    epuck.step()
-    time.sleep( 2 )
+
     epuck.set_motors_speed (turnspeed,-turnspeed)
     epuck.step ()
-    time.sleep( 2 )
+    time.sleep( 1.3 )
     epuck.set_motors_speed(0, 0)
     epuck.step()  
     print "Epuck is now going west"
 
 def north(current_direction):
-    speedl = 300
-    speedr = 300    
+   
     if current_direction == 2:
-        turnspeed = 250
+        turnspeed = 500
     elif current_direction == 3:
-        turnspeed = -250
+        turnspeed = -500
     elif current_direction == 1:
         turnspeed = 0        
     else:
-        turnspeed = 500
+        turnspeed = 1000
         
-    epuck.set_motors_speed(speedl, speedr)
-    epuck.step()
-    time.sleep( 2 )
+
     epuck.set_motors_speed (turnspeed,-turnspeed)
     epuck.step ()
-    time.sleep( 2 )
+    time.sleep( 1.3 )
     epuck.set_motors_speed(0, 0)
     epuck.step()  
     print "Epuck is now going north"
 
 def Act(command, flag):
-    speedl = 300
-    speedr = 300
+    speedl = 1000
+    speedr = 1000
     if command == 0:
         north(flag)
     elif command == 1:
@@ -149,12 +137,16 @@ def Act(command, flag):
         west(flag)
     else:
         east(flag)
-    epuck.set_motors_speed(200, 200)
-    print "forward a step in oder to avoid detect same state 2 times"
+        
+    epuck.set_motors_speed(1000, 1000)
+    #print "forward a step in oder to avoid detect same state 2 times"
     epuck.step()
-    time.sleep(1)
+    time.sleep(1.6)
     epuck.set_motors_speed(0, 0)
+    #print "forward a step in oder to avoid detect same state 2 times"
     epuck.step()
+    time.sleep(0.2)
+    
     while True :
         
         epuck._sensors_to_read = ['m']
@@ -166,7 +158,7 @@ def Act(command, flag):
         if (b[0]>500 and b[0]<1000) or (b[1]>500 and b[1]<1000) or (b[2]>500 and b[2]<1000) :
             epuck.set_motors_speed(0, 0)
             epuck.step()
-            time.sleep(3)
+            time.sleep(0.3)
             print "arrive at a new state"
             break
             
@@ -192,21 +184,66 @@ def Act(command, flag):
    
 
 
+def read_state():
+    # 从停止线移动到状态区
+    s = [2, 2, 2]
+    time.sleep(1)
+    speedl = 300
+    speedr = 300 
+    epuck.set_motors_speed(speedl, speedr)
+    epuck.step()
+    time.sleep(1.5)
+    epuck.set_motors_speed(0,0)
+    epuck.step()
+    time.sleep(0.1)
+    # 读第一个状态
+    s[0] = read_state_step()
+    s[1] = read_state_step()
+    s[2] = read_state_step()
+    state_number = 9 * s[0] + 3 * s[1] + s[2]
+    print s
+    return state_number
+    
+    
+def read_state_step():
+    epuck._sensors_to_read = ['n','m']
+    #a=epuck.get_proximity()
+    sensor_value = epuck.get_floor_sensors()
+    if ((sensor_value[0] + sensor_value[1] + sensor_value[2]) > 3500):
+        digit = 2
+    elif ((sensor_value[0] + sensor_value[1] + sensor_value[2])<1000):
+        digit = 0
+    else:
+        digit = 1
+        
+    #print '读了一次'
+    #print digit
+    time.sleep(0.5)
+    speedl = 600
+    speedr = 600 
+    epuck.set_motors_speed(speedl, speedr)
+    epuck.step()
+    time.sleep(0.75)
+    epuck.set_motors_speed(0, 0)
+    epuck.step()
+    time.sleep(0.1)
+    return digit
+    
 
+def run (transition_matrix,goal_state,start_orientation,pi):
 
-def run (transition_matrix,start_state,goal_state,start_orientation,pi):
-
-    current_state = start_state
+    current_state = 14
     current_orientation = start_orientation
     k = 1
     while current_state != goal_state:
-        print "Epuck thinks it was at State%d" % current_state
+        
         action = pi[current_state]
-        time.sleep(1)
-        Act(action, current_orientation)
+        time.sleep(0.2)
+        Act(action, current_orientation)        
         time.sleep(1)
         current_orientation = action        
-        current_state = int(transition_matrix[current_state][action])
+        current_state = read_state()
+        print "State Reading: State%d" % current_state
         k = k + 1
 
 
@@ -215,7 +252,7 @@ def run (transition_matrix,start_state,goal_state,start_orientation,pi):
 
 
 
-time.sleep( 3 )
+
 print " Program started "
 vrep . simxFinish ( -1) # just in case , close all opened connection
 clientID = vrep . simxStart ('127.0.0.1', 19999 , True , True , 5000 , 5)
@@ -260,9 +297,10 @@ if __name__ == '__main__':
                           [ 7,10, 8,-1],
                           [ 9,-1,-1,-1]])   #10
     
-    start_state = 0
-    goal_state = 10
+    start_state = 14
+    goal_state = 2
     start_orientation = 3    
 ################################################################################  
-    pi = [3, 3, 0, 1, 3, 1, 1, 1, 3, 1, 0]
-    run (transition_matrix,start_state,goal_state,start_orientation,pi)
+   # pi = [3, 3, 0, 1, 3, 1, 1, 1, 3, 1, 0]
+    pi = [2, 1, 0, 0, 0, 2, 2, 2, 1, 2, 0, 3, 2, 2, 0, 2, 1, 2, 3, 3, 2, 2]
+    run (transition_matrix,goal_state,start_orientation,pi)
