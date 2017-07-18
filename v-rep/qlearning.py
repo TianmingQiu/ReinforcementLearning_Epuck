@@ -21,6 +21,7 @@ def qlearning(reward,transition_matrix,start_state,goal_state):
     pi = []
     valid_action = []
     Q = np.zeros((reward.shape[0],reward.shape[1]))
+    np.save("Q.npy",Q)
     
     for i in transition_matrix:
         Boolean = i >= 0 
@@ -28,7 +29,7 @@ def qlearning(reward,transition_matrix,start_state,goal_state):
     
     for i in xrange(num_episodes):       
         current_state = start_state
-    
+        Q = np.load("Q.npy")
         while current_state != goal_state:
             if np.random.rand() < epsilon:            
                 action = valid_action[current_state][np.argmax(Q[current_state][valid_action[current_state]])]
@@ -43,11 +44,14 @@ def qlearning(reward,transition_matrix,start_state,goal_state):
         
             Q[current_state][action] = Q[current_state][action] + alpha*(reward[current_state][action] + gamma * max(furture_reaward) - Q[current_state][action])           
             current_state = next_state
-
+            
+            np.save("Q.npy",Q)
+            
+    Q = np.load("Q.npy")
     for i in xrange(len(Q)):        
         pi.append(valid_action[i][np.argmax(Q[i][valid_action[i]])])
 
-    return pi
+    return pi,Q
 
  #############################################################################
 reward = np.array([[ 0, 0, -1,0],   #0
@@ -103,7 +107,8 @@ goal_state = 2
 start_orientation = 3
 
 
-pi = qlearning(reward,transition_matrix,start_state,goal_state)
+[pi,Q] = qlearning(reward,transition_matrix,start_state,goal_state)
 sss=[0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,]
 print sss
 print pi
+
