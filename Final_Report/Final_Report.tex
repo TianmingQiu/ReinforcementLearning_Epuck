@@ -74,7 +74,8 @@ road networks is absent, the planning is essentially impossible. Therefore,
 we attempt to empoly reinforcement learning to plan path from scratch.
 \\[3ex]
 In order to make our project more realistic, we use the map around TUM as the
-training map. The original map (left) and the map in simulator (right) are shown
+training map. 
+The original map (left) and the map in simulator (right) are shown
 in Figure \ref{fig1}. The simulation map contains several guide lines on the
 ground as the roads to form the road network with many crossroads. Two points on
 simulation map could be chosen as starting point and destination, and then agent
@@ -106,35 +107,36 @@ reward such as '-10' in order to let agent avoid those states. At the begin of
 each simulation, two points will set up as the start point and destination,
 and the e-puck robot will be placed in the start point of the training map, and
 start to explore the training map. From one state to adjacent state, the robot will
-drive along the line we drawn on the ground. The under sensor on e-puck
+drive along the line we drawn on the ground. The under sensors on e-puck
 will scan the ground all the time in order to keep robot following the line
 and detect the label we use to distinguish state. Once e-puck reaches the terminal
-state(destination), it will be replaced in the same start point and start a new
-exploration.
+state(destination), it will be replaced in the same start point and start a new exploration.
 
 \section{Algorithm}
 The reinforcement learning approaches can be categorized into two groups: model-free
 method, which directly learns a control policy from system interaction, and
-model-based method, which first learn a model of the system dynamics, and then
-optimize the policy under this model. At the beginning of our project, we attempt to
+model-based method, which first learns a model of the system dynamics, and then
+optimizes the policy under this model. At the beginning of our project, we attempt to
 set up a model of our environment in order to make learning process more efficient.
-We let all transitionprobability be deterministic, i.e, the results of agent performs
+We let all transition probability be deterministic, i.e, the results of agent performs
 an action are deterministic. The results are only depends on current state and performed
 action. And then we optimized policy under this policy. But this model is too coarse
 and ideal. It doesn't have ability to handle with model uncertainty and complex situation.
 As small model errors accumulate, the simulated results can be big different from
 real situation. For this reason, we modified our plan, a typical Q-learning algorithm
 is used. The agent first observes current state, and then takes action accorading to
-policy. After the action is performed, the agent observe a reward and new state.
+policy. After the action is performed, the agent observes a reward and new state.
 Then the Q-value is updated by maximizing Q-value of next step.
 
 \section{Milestones}
 In the end we have achieved five main Milestones: determination of the mathematical
 model, familiar with the software environment, viable physical environment design,
-successful implementation of Codes on Vrep, and stably interact with real world.
+successful program implementation on Vrep, and stably interaction with real world.
 And there is also a remaining feature: state detection with front camera.
 \\[3ex]
-First of all, the mathematical model has been determined. Before we
+\textbf{Determination of the mathematical model}
+
+Before we
 chose the road crossing as states, and we assumed the actions as 'turn right',
 'turn left' and so on. However, it caused a serious problem that the model
 could not satisfy Markov Property. Assume Epuck comes to a road crossing
@@ -142,41 +144,61 @@ several times, first time it comes from north, namely the last state is in the
 north direction of current state, and second time comes from south. Since
 we treat this road crossing as only one state, if Epuck both choose the action
 'turn right', the transition probability of the next state will be totally different
-and somehow dependent on not only the current state, but also the state
+and somehow depends on not only the current state, but also the state
 before, like $P(s_{t+1}|s_t, s_{t-1}, a_t)$. Hence we choose a new set of actions
 as 'go east', 'go west', 'go north' and 'go south'. And on the high level of
 this problem we just treat our Epuck as a mass point. And leave the detailed
 problem of action realizations to the lower level. This approach make sure the
 scene satisfies Markov property.
 \\[3ex]
-Secondly, we learned how to use python and vrep. We don't have any experience on
+\textbf{Learning Python and Vrep }
+
+We don't have any experience on
 python before, so we have to learn it from scratch. The interface of vrep is also
 a hard problem for us. We spent a lot of time to manipulate it skillfully.
 \\[3ex]
-Thirdly, a viable simulation map has been designed on Vrep. The
-three floor sensors under Epuck are applied to detect the road, and the
-road crossings are painted with a three-color barcode in order to distinguish
+\textbf{A viable simulation map and state detection design}
+
+One challenge we faced was that it is very difficult to detect different states in consideration of Epuck's poor performances on sensors. Finally we invent a kind of 'ternary encoder unit', which is shown in figure \ref{fig2}. 
+\begin{figure}[tb]
+\centering 
+\includegraphics[width=0.6\columnwidth]{encoder} 
+\caption[An example of a floating figure]{An example of state with ternary encoder unit} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
+\label{fig2} 
+\end{figure}
+This state detection unit will be put at each crossroads to let Epuck detect and realize where it is. 
+So the outside stripe is used to make Epuck to stop tracking the line and start state detection procedure. 
+And the inside part contains three colors stripe and formed as a big square which could let Epuck smoothly detect while it comes from any directions to this crossroad. 
+Afterwards Epuck will step forward for a corresponding fixed distance and read the color three times. 
+Black is represented as '0', gray is '1' and white is '2'. With reading different colors it can get three digits in the form of ternary code. 
+After turning 3 digits ternary code into decimal code, epuck will know which state it is.
+The three floor sensors under Epuck are also applied to detect the road, and the
+road crossings are represented as ternary encoder unit in order to distinguish
 between different states. Although the floor sensor are not very accurate to
 distinguish high resolution color space, it could be sensitive enough to detect
-black, white, and gray these three situations. The length of our barcode is 3.
+black, white, and gray these three situations. The length of our encoder is 3.
 So, it can perform $3^3 = 27$ different states.
 \\[3ex]
-Next, the simulation execution of Epuck have
-been implemented on Vrep by Python. The code can be basically divided
+\textbf{Simulation implemention on Vrep}
+
+The code can be basically divided
 into three main parts: Q-learning algorithm, Motion or action control and
 perception part. Q-learning part is designed to select the next action and update
 Q-value functions. Motion control is used for the low level control issues such as
 'go east', turn a corner and so on. Perception focus on the three floor sensors
-to make sure Epuck could follow the line,stop correctly at the crossing roads,
+to make sure Epuck could follow the line, stop correctly at the crossing roads,
 and determine current state.
 \\[3ex]
-After that, the physical environment is builded, and epuck can stably interact with it.
-We printed the map with four sheets of A4 paper. All the states and road are marked
+\textbf{Training and implementation on real physical environment}
+
+We printed the map with several sheets of A4 paper. All the states and road are marked
 out on the paper. Epuck can distinguish road and different states with the help
 of three floor sensors. Three floor sensors scan the ground all thee time in order to
 detect the change of colors on the ground.
 \\[3ex]
-Finally is the still remaining feature: state detection with front camera. State
+\textbf{Remaining task: state detection with front camera}
+
+State
 detection is a key component of our project. At the beginning we attempted to
 achieve this feature using front camera. Due to poor resolution and slow transmission
 we discarded this plan, and quickly changed to use floor sensor instead.
