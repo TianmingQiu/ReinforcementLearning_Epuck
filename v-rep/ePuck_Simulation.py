@@ -163,13 +163,12 @@ def Act(command, flag):
         west(flag)
     else:
         east(flag)
-        
-    epuck.set_motors_speed(1000, 1000)
-    #print "forward a step in oder to avoid detect same state 2 times"
+     
+    # After turn a specific angle, step out current state unit:
+    epuck.set_motors_speed(1000, 1000)  
     epuck.step()
     time.sleep(1.6)
     epuck.set_motors_speed(0, 0)
-    #print "forward a step in oder to avoid detect same state 2 times"
     epuck.step()
     time.sleep(0.2)
     
