@@ -60,7 +60,7 @@
 %	ESSAY BODY
 %----------------------------------------------------------------------------------------
 \section{Introduction}
-Reinforcement learning is a powerful framwork for robot to learn novel tasks by
+Reinforcement learning is a powerful framework for robot to learn novel tasks by
 self-practice. Through trial-and-error learning, robotic agent has the chance to
 be exploited in a wide range of situations, including industrial and social
 applications. In this project, we attempt to employ reinforcement learning for
@@ -69,9 +69,9 @@ path planning.
 Path planning is a basic and widely-studied problem. Also it has many actual
 scenarios, for example, autonomous car navigation and drones for logistics.
 Typically, a optimal path between two locations on traffic map is computed by
-considering both distance and traffic situation. But if prior informantion for
+considering both distance and traffic situation. But if prior information for
 road networks is absent, the planning is essentially impossible. Therefore,
-we attempt to empoly reinforcement learning to plan path from scratch.
+we attempt to employ reinforcement learning to plan path from scratch.
 
 In order to make our project more realistic, we use the map around TUM as the
 training map. 
@@ -105,7 +105,7 @@ controller that takes care of accelerating, moving, turning and stopping. The
 different crossroad in the simulated map will be considered as states. The simulation
 map we used has 22 crossroads, just the 22 states. 
 
-The reward can be represented in several ways. The most common representation is $R(s)$, which only relies on the state. In our experiment, we choose the representation as $R(s,a)$, which denpends on both state and the action the agent take. It will accelerate our training and it is more suitable for Q learning since Q value depends also on both state and action. We assign a reward '+10' at the destination
+The reward can be represented in several ways. The most common representation is $R(s)$, which only relies on the state. In our experiment, we choose the representation as $R(s,a)$, which depends on both state and the action the agent take. It will accelerate our training and it is more suitable for Q learning since Q value depends also on both state and action. We assign a reward '+10' at the destination
 state and '-1' at the other states. Also at the blind alley it will get a very poor
 reward such as '-10' in order to let agent avoid those states. 
 
@@ -130,7 +130,7 @@ action. And then we optimized policy under this policy. But this model is too co
 and ideal. It doesn't have ability to handle with model uncertainty and complex situation.
 As small model errors accumulate, the simulated results can be big different from
 real situation. For this reason, we modified our plan, a typical Q-learning algorithm
-is used. The agent first observes current state, and then takes action accorading to
+is used. The agent first observes current state, and then takes action according to
 policy. After the action is performed, the agent observes a reward and new state.
 Then the Q-value is updated by maximizing Q-value of next step.
 
@@ -160,7 +160,7 @@ scene satisfies Markov property.
 \textbf{Learning Python and Vrep }
 
 We don't have any experience on
-python before, so we have to learn it from scratch. The interface of vrep is also
+python before, so we have to learn it from scratch. The interface of Vrep is also
 a hard problem for us. We spent a lot of time to manipulate it skillfully.
 \\[3ex]
 \textbf{A viable simulation map and state detection design}
@@ -177,13 +177,13 @@ So the outside stripe is used to make Epuck to stop tracking the line and start 
 And the inside part contains three colors stripe and formed as a big square which could let Epuck smoothly detect while it comes from any directions to this crossroad. 
 Afterwards Epuck will step forward for a corresponding fixed distance and read the color three times. 
 Black is represented as '0', gray is '1' and white is '2'. With reading different colors it can get three digits in the form of ternary code. 
-After turning 3 digits ternary code into decimal code, epuck will know which state it is.
+After turning 3 digits ternary code into decimal code, Epuck will know which state it is.
 The three floor sensors under Epuck are also applied to detect the road, and the
 road crossings are represented as ternary encoder unit in order to distinguish
 between different states. Although the floor sensor are not very accurate to
 distinguish high resolution color space, it could be sensitive enough to detect
 black, white, and gray these three situations. The length of our encoder is 3.
-So, it can perform $3^3 = 27$ different states.
+So, it can represent $3^3 = 27$ different states.
 \\[3ex]
 \textbf{Simulation implemention on Vrep}
 
@@ -203,9 +203,9 @@ We printed the states and set up the real map on the ground which is shown in fi
 of three floor sensors. Three floor sensors scan the ground all thee time in order to
 detect the change of colors on the ground.
 
-In the real physical map there are some new problems. For example, Epuck may be blocked at the joint of roads, since the actuator performs not as acurate and strong as the one in simulation and the road is not extremely flat due to the coarse map made by paper. Sometimes communication lost may occur that Epuck could not get the commands timely and rushed out of the map. Training process takes a long time not only because of the dimensions of states but also because each successful episode of training is not easy to finish due to the above problems.
+In the real physical map there are some new problems. For example, Epuck may be blocked at the joint of roads, since the actuator performs not as accurate and strong as the one in simulation and the road is not extremely flat due to the coarse map made by paper. Sometimes communication lost may occur that Epuck could not get the commands timely and rushed out of the map. Training process takes a long time not only because of the dimensions of states but also because each successful episode of training is not easy to finish due to the above problems.
 
-Based on the mentioned reality, we decide to combine the simulation and real world training together to achieve the convergence of Q table more quickly and efficient. And finaly the Epuck can implement an optimal path on the real map as we supposed.
+Based on the mentioned reality, we decide to combine the simulation and real world training together to achieve the convergence of Q table more quickly and efficient. And finally the Epuck can implement an optimal path on the real map as we supposed.
 \begin{figure}[tb]
 \centering 
 \includegraphics[width=0.95\columnwidth]{RealMap} 
@@ -225,7 +225,7 @@ After successfully completing this course, we master some basics of reinforcemen
 learning methods and learn how to model real engineering problems using reinforcement
 learning methods. Using this knowledge we constructed and implemented reinforcement
 learning algorithms to solve simple robotics problems on the e-Puck platform. And
-through practice we are also familiar with python and vrep.
+through practice we are also familiar with python and Vrep.
 
 
 
