@@ -189,12 +189,23 @@ Q-value functions. Motion control is used for the low level control issues such 
 to make sure Epuck could follow the line, stop correctly at the crossing roads,
 and determine current state.
 \\[3ex]
-\textbf{Training and implementation on real physical environment}
+\textbf{Training and implementation in real physical environment}
 
-We printed the map with several sheets of A4 paper. All the states and road are marked
-out on the paper. Epuck can distinguish road and different states with the help
+In the physical environment implementation stage we choose bluetooth communication. Although the data transmission is limited by the bandwidth, we still can achieve stable and efficient remote control through bluetooth since we don't need to transfer images. Considering the time delay we have also carried out many tests to make sure that we can drive the Epuck smoothly based on a fixed bandwidth. Another advantage is we do not need to make a lot of changes with the code, especially the APIs. The procedure is also very similar to the remote control on Vrep so we could adjust the parameter or debug more easily.
+
+We printed the states and set up the real map on the ground which is shown in figure \ref{fig3}. At first we test several patterns of states to determine which gray color is the best one and how wide each stripe could be. Epuck can distinguish road and different states with the help
 of three floor sensors. Three floor sensors scan the ground all thee time in order to
 detect the change of colors on the ground.
+
+In the real physical map there are some new problems. For example, Epuck may be blocked at the joint of roads, since the actuator performs not as acurate and strong as the one in simulation and the road is not extremely flat due to the coarse map made by paper. Sometimes communication lost may occur that Epuck could not get the commands timely and rushed out of the map. Training process takes a long time not only because of the dimensions of states but also because each successful episode of training is not easy to finish due to the above problems.
+
+Based on the mentioned reality, we decide to combine the simulation and real world training together to achieve the convergence of Q table more quickly and efficient. And finaly the Epuck can implement an optimal path on the real map as we supposed.
+\begin{figure}[tb]
+\centering 
+\includegraphics[width=0.95\columnwidth]{RealMap} 
+\caption[An example of a floating figure]{Implementation on a real map} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
+\label{fig3} 
+\end{figure}
 \\[3ex]
 \textbf{Remaining task: state detection with front camera}
 
