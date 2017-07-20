@@ -1,8 +1,13 @@
-Based on the given sensors and the physical structures (especially the pohysical limits) we now have these ideas below:
+Reinforcement Learning implemented on Epuck
 
-1. trce a line
-2. find a shortest way to the destination in a map with many 'crossroads'
-3. get out of a simulated, vitual appartment in an optimical route, which with several rooms that have different colors or different textures is.
+/src/Vrep includes the code implemented on Vrep simulation
+The main file is 'ePuck_Simulation.py'.
+The simulation map is 'uni_map.ttt'
 
-reference:
-1.Koenig S, Simmons R G. Complexity analysis of real-time reinforcement learning applied to finding shortest paths in deterministic domains[R]. CARNEGIE-MELLON UNIV PITTSBURGH PA SCHOOL OF COMPUTER SCIENCE, 1992.
+/src/Bluetooth contains the codes carried out in real physical map
+The main file is 'ePuck_Realworld.py'
+
+/data+map includes two Q table, one is empty, another is the Q value after succesful training.
+The two '.docx' is used for real map printing.
+
+/report includes reports and presentations during the semester.
