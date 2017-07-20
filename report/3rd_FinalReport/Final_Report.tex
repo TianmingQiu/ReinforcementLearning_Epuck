@@ -65,14 +65,14 @@ self-practice. Through trial-and-error learning, robotic agent has the chance to
 be exploited in a wide range of situations, including industrial and social
 applications. In this project, we attempt to employ reinforcement learning for
 path planning.
-\\[3ex]
+
 Path planning is a basic and widely-studied problem. Also it has many actual
 scenarios, for example, autonomous car navigation and drones for logistics.
 Typically, a optimal path between two locations on traffic map is computed by
 considering both distance and traffic situation. But if prior informantion for
 road networks is absent, the planning is essentially impossible. Therefore,
 we attempt to empoly reinforcement learning to plan path from scratch.
-\\[3ex]
+
 In order to make our project more realistic, we use the map around TUM as the
 training map. 
 The original map (left) and the map in simulator (right) are shown
@@ -85,25 +85,31 @@ the e-puck mobile robot takes on a role of explorer.
 \centering
 \subfigure[map from google map]{
 \label{Fig.sub.1}
-\includegraphics[width=0.45\textwidth]{UniMap.png}}
+\includegraphics[width=0.48\textwidth]{UniMap.png}}
 \subfigure[map in v-rep]{
 \label{Fig.sub.2}
-\includegraphics[width=0.45\textwidth]{Vrep2.png}}
+\includegraphics[width=0.48\textwidth]{Vrep2.png}}
 \caption{Training maps}
 \label{fig1}
 \end{figure}
 
 
-\section{Modeling}
+\section{Modeling and Environment}
+We model our problem into a Markov decision process, which is a discrete-time state transition system. It can be described formally with 5 components as a 5-tuple $(\mathcal{S,A,P}, r,\gamma)$. 
+
 To make our tasks tractable, we consider a grid-based representation with discrete
 states and action. The navigational task for our mobile robots could be projected
 into this presentation by employing a number of actions such as 'drive east',
 'drive west', 'drive north' as well as 'drive south' that only use a low-level
 controller that takes care of accelerating, moving, turning and stopping. The
 different crossroad in the simulated map will be considered as states. The simulation
-map we used has 22 states. In our experiment, we assign a reward '+10' at the destination
+map we used has 22 crossroads, just the 22 states. 
+
+The reward can be represented in several ways. The most common representation is $R(s)$, which only relies on the state. In our experiment, we choose the representation as $R(s,a)$, which denpends on both state and the action the agent take. It will accelerate our training and it is more suitable for Q learning since Q value depends also on both state and action. We assign a reward '+10' at the destination
 state and '-1' at the other states. Also at the blind alley it will get a very poor
-reward such as '-10' in order to let agent avoid those states. At the begin of
+reward such as '-10' in order to let agent avoid those states. 
+
+At the begin of
 each simulation, two points will set up as the start point and destination,
 and the e-puck robot will be placed in the start point of the training map, and
 start to explore the training map. From one state to adjacent state, the robot will
