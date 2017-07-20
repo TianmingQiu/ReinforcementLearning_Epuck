@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1500383695 "Final_Report.tex" "Final_Report.pdf" "Final_Report" 1500383697
+["pdflatex"] 1500565486 "Final_Report.tex" "Final_Report.pdf" "Final_Report" 1500565488
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc" 1458477487 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb8r.tfm" 1136772254 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb8t.tfm" 1136772254 3456 16dd534f88eb2bd21ebc7203786b436e ""
@@ -21,6 +21,7 @@
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/mathpazo/zplmr7y.tfm" 1136772254 1316 b4037e9c09961a72f8476628774e1ec1 ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Program Files/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmri.pfb" 1136853348 15213 d999bbe8bd9c8f231f3f66a737c76478 ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb" 1136853348 52406 dad2f72863a03727d5f536c64a69c452 ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb" 1136853348 52665 661b1e6b26edb5f50dd491f8a701cb57 ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb" 1136853348 50022 90249cba7e3e4e9845f80328d6f9bd13 ""
@@ -70,10 +71,12 @@
   "C:/Program Files/MiKTeX 2.9/tex/latex/wrapfig/wrapfig.sty" 1044406800 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map" 1500279789 80602 4ac2efe4df1e5ef0ccc581b42b48788d ""
   "C:/Users/Lingfeng/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1497875377 4060068 d637d4736c029f0c42d28c79550ae705 ""
-  "Final_Report.aux" 1500383697 826 eba4c931a9be6c42b8d2d419ab954a02 ""
-  "Final_Report.tex" 1500383693 10585 e58579d9c72bd186cc86746359ac5d41 ""
-  "UniMap.png" 1500279600 353652 ab7d7bde046b5cf2a25a380d51dca575 ""
-  "Vrep2.png" 1500279600 1021126 e8576a9ce9fd9ca6d098b7f484088e41 ""
+  "Final_Report.aux" 1500565488 1110 1c93fa167b3c2e24fad6f3570f2fddfa ""
+  "Final_Report.tex" 1500565485 15280 7b5ba1f3ac042e6aeb1b9b13c76120c3 ""
+  "RealMap.jpg" 1500564270 3246893 a5c52ed440daba7d1671a0adaaf73f5a ""
+  "UniMap.png" 1500564270 353652 ab7d7bde046b5cf2a25a380d51dca575 ""
+  "Vrep2.png" 1500564270 621944 d0d4edae67175601d8f016af5500fdac ""
+  "encoder.png" 1500564270 9200 bc74e928f0f00a14951bec6f8c980885 ""
   (generated)
   "Final_Report.log"
   "Final_Report.aux"

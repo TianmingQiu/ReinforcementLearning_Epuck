@@ -74,7 +74,7 @@ road networks is absent, the planning is essentially impossible. Therefore,
 we attempt to employ reinforcement learning to plan path from scratch.
 
 In order to make our project more realistic, we use the map around TUM as the
-training map. 
+training map.
 The original map (left) and the map in simulator (right) are shown
 in Figure \ref{fig1}. The simulation map contains several guide lines on the
 ground as the roads to form the road network with many crossroads. Two points on
@@ -95,7 +95,7 @@ the e-puck mobile robot takes on a role of explorer.
 
 
 \section{Modeling and Environment}
-We model our problem into a Markov decision process, which is a discrete-time state transition system. It can be described formally with 5 components as a 5-tuple $(\mathcal{S,A,P}, r,\gamma)$. 
+We model our problem into a Markov decision process, which is a discrete-time state transition system. It can be described formally with 5 components as a 5-tuple $(\mathcal{S,A,P}, r,\gamma)$.
 
 To make our tasks tractable, we consider a grid-based representation with discrete
 states and action. The navigational task for our mobile robots could be projected
@@ -103,11 +103,11 @@ into this presentation by employing a number of actions such as 'drive east',
 'drive west', 'drive north' as well as 'drive south' that only use a low-level
 controller that takes care of accelerating, moving, turning and stopping. The
 different crossroad in the simulated map will be considered as states. The simulation
-map we used has 22 crossroads, just the 22 states. 
+map we used has 22 crossroads, just the 22 states.
 
 The reward can be represented in several ways. The most common representation is $R(s)$, which only relies on the state. In our experiment, we choose the representation as $R(s,a)$, which depends on both state and the action the agent take. It will accelerate our training and it is more suitable for Q learning since Q value depends also on both state and action. We assign a reward '+10' at the destination
 state and '-1' at the other states. Also at the blind alley it will get a very poor
-reward such as '-10' in order to let agent avoid those states. 
+reward such as '-10' in order to let agent avoid those states.
 
 At the begin of
 each simulation, two points will set up as the start point and destination,
@@ -165,18 +165,18 @@ a hard problem for us. We spent a lot of time to manipulate it skillfully.
 \\[3ex]
 \textbf{A viable simulation map and state detection design}
 
-One challenge we faced was that it is very difficult to detect different states in consideration of Epuck's poor performances on sensors. Finally we invent a kind of 'ternary encoder unit', which is shown in figure \ref{fig2}. 
+One challenge we faced was that it is very difficult to detect different states in consideration of Epuck's poor performances on sensors. Finally we invent a kind of 'ternary encoder unit', which is shown in figure \ref{fig2}.
 \begin{figure}[tb]
-\centering 
-\includegraphics[width=0.6\columnwidth]{encoder} 
+\centering
+\includegraphics[width=0.6\columnwidth]{encoder}
 \caption[An example of a floating figure]{An example of state with ternary encoder unit} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
-\label{fig2} 
+\label{fig2}
 \end{figure}
-This state detection unit will be put at each crossroads to let Epuck detect and realize where it is. 
-So the outside stripe is used to make Epuck to stop tracking the line and start state detection procedure. 
-And the inside part contains three colors stripe and formed as a big square which could let Epuck smoothly detect while it comes from any directions to this crossroad. 
-Afterwards Epuck will step forward for a corresponding fixed distance and read the color three times. 
-Black is represented as '0', gray is '1' and white is '2'. With reading different colors it can get three digits in the form of ternary code. 
+This state detection unit will be put at each crossroads to let Epuck detect and realize where it is.
+So the outside stripe is used to make Epuck to stop tracking the line and start state detection procedure.
+And the inside part contains three colors stripe and formed as a big square which could let Epuck smoothly detect while it comes from any directions to this crossroad.
+Afterwards Epuck will step forward for a corresponding fixed distance and read the color three times.
+Black is represented as '0', gray is '1' and white is '2'. With reading different colors it can get three digits in the form of ternary code.
 After turning 3 digits ternary code into decimal code, Epuck will know which state it is.
 The three floor sensors under Epuck are also applied to detect the road, and the
 road crossings are represented as ternary encoder unit in order to distinguish
@@ -207,10 +207,10 @@ In the real physical map there are some new problems. For example, Epuck may be 
 
 Based on the mentioned reality, we decide to combine the simulation and real world training together to achieve the convergence of Q table more quickly and efficient. And finally the Epuck can implement an optimal path on the real map as we supposed.
 \begin{figure}[tb]
-\centering 
-\includegraphics[width=0.95\columnwidth]{RealMap} 
+\centering
+\includegraphics[width=0.95\columnwidth]{RealMap}
 \caption[An example of a floating figure]{Implementation on a real map} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
-\label{fig3} 
+\label{fig3}
 \end{figure}
 \\[3ex]
 \textbf{Remaining task: state detection with front camera}
@@ -225,7 +225,20 @@ After successfully completing this course, we master some basics of reinforcemen
 learning methods and learn how to model real engineering problems using reinforcement
 learning methods. Using this knowledge we constructed and implemented reinforcement
 learning algorithms to solve simple robotics problems on the e-Puck platform. And
-through practice we are also familiar with python and Vrep.
+through practice we are also familiar with python and Vrep. If we have enough time,
+we would improve our project from two points: improving data efficiency and
+decreasing computation complex. As we know, reinforcement learning often suffers
+from data inefficient. The agent requires amounts of data to learn a simple task.
+In our project, epuck was trained over 50 episodes to find the shortest path
+between 2 states on a map with 22 states. We spend so much time on it. Therefore,
+we still want to use model-based method for make our learning process more efficient.
+In addition, we would also attempt to parameterize value functions and policy. By
+parameterized policy and value functions reinforcement learning can cope with high
+dimensional space and encode prior knowledg. This also provides the possibility of
+training with neural network. At the end, we would also like to express our
+disappointment with epuck platform. If we used other platforms, we could make our
+task more various and easy. But it is a really good experience, thanks to those
+who have provided us with help and advice.
 
 
 
