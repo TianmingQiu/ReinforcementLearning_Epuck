@@ -1,7 +1,7 @@
 # Reinforcement Learning implemented on Epuck
 
 * /src/Vrep includes the code implemented on Vrep simulation
-> The main file is 'ePuck_Simulation.py'.
+> The main file is 'ePuck_Simulation.py'.  
 > The simulation map is 'uni_map.ttt'
 
 * /src/Bluetooth contains the codes carried out in real physical map
